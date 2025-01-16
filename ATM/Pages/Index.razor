@@ -33,8 +33,8 @@
             height: 5vh;
             box-shadow: 0px 0px 5px;
             &:hover{
-                background-color: #32c4b125;
-            }
+                    background-color: rgba(0, 0, 255, 0.327);
+                }
             &:active{
                 box-shadow: 0px 0px 10px;
                 background-color: #f3f178ea;
@@ -82,6 +82,9 @@
                 border-radius: 10px;
                 top: 10px;
                 right: 10px;
+                 &:hover{
+                    background-color: rgba(0, 0, 255, 0.327);
+                }
             }
         }
     }
@@ -89,6 +92,9 @@
     .showUsers {
         padding: 15px;
         border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
         &:hover {
             background-color: #ffffff5e;
@@ -124,6 +130,46 @@
             width: 13px;
             height: 13px;
             border-radius: 50%;
+        }
+
+
+        .ShowUserDetails{
+           text-align: center;
+                background-color: rgba(31, 31, 155, 0.494);
+                padding: 15px;
+                border-radius: 10px;
+                &:hover{
+                    background-color: rgba(0, 0, 255, 0.327);
+                }
+        }
+
+
+
+
+
+        .UserDetails{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0px 0px 0px 60px rgba(10, 10, 10, 0.396);
+                @* gap: 10px; *@
+                padding: 20px;
+                border-radius: 10px;
+                background-color:transparent;
+                backdrop-filter: blur(2.6px);
+                background: linear-gradient(120deg,#b32c408d, #0fa54452);
+                background-size: 1px;
+                color: white;
+                width: 90vw;
+                height: 90vh;    
+        }
+         .HoldDetails{
+             position: relative;               
+            width: 80vw;
+            height: 80vh
+            border:1px solid red;
+            border:2px solid yellow;
         }
 </style>
 
@@ -164,14 +210,26 @@
         }
     </div>
 
-    <ul>
-        @foreach (var i in listUser)
-        {
-            <li class="showUsers"> @i.UserId</li>
-        }
-    </ul>
+   <ul class="details">
+    @foreach (var user in listUser)
+    {
+        <li class="showUsers">
+           <p> @user.UserId</p>
+            <button class="ShowUserDetails" @onclick="ShowUserDetails"> Showdetails </button>
+        </li>
+    }
+</ul>
+</div>
+
+@if(ifShowUserDetails==true){
+
+
+<div class="UserDetails">
+    <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+    <div class="HoldDetails">weeeeeeee</div>
 
 </div>
+}
 
 
 
@@ -205,6 +263,15 @@ private void createNewUser()
     ClearForm();
     errorMessage = string.Empty;
 }
+
+private bool ifShowUserDetails=false;
+
+private void ShowUserDetails(){
+    ifShowUserDetails=true;
+}
+
+
+
     private void ClearForm()
     {
         userId = string.Empty;
@@ -216,6 +283,7 @@ private void createNewUser()
 {
     isProcessing = true;
     isClicked = false;
+    ifShowUserDetails=false;
     StateHasChanged();  
     await Task.Delay(1000);
     ClearForm();

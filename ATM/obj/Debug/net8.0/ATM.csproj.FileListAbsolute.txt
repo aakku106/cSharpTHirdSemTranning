@@ -1017,9 +1017,9 @@
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/i34s8hzpjg-tptq2av103.gz
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/zr9349x74y-lfu7j35m59.gz
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/7emndsso70-oyz0vx2fzb.gz
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/6rbulbschx-r7l3q97x3b.gz
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/3ujntvsizk-kte993fnm4.gz
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/u0gs5y19dk-f7tkljxrvg.gz
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/6rbulbschx-0bknvttykz.gz
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/3ujntvsizk-2qkqlksz6b.gz
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/u0gs5y19dk-ov2dtajz85.gz
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/staticwebassets.build.json
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/staticwebassets.development.json
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/staticwebassets.build.endpoints.json
