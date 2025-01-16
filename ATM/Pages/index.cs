@@ -1,17 +1,14 @@
-using System.ComponentModel;
-
 namespace OnlineATM
 {
-    public class Index
+    public class UserAccount
     {
         public string? UserId { get; set; } = string.Empty;
         public string? UserPassword { get; private set; } = string.Empty;
-        public decimal UserAmount { get; private set; } = 0;
-        public Index(string userId, string userPassword, decimal userAmount)
+
+        public UserAccount(string userId, string userPassword)
         {
             UserId = userId;
             UserPassword = userPassword;
-            UserAmount = userAmount;
         }
     }
 }
