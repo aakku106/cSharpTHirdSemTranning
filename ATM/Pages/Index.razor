@@ -11,7 +11,7 @@
         h1 {
             text-align: center;
         }
-        button{
+        button,.act{
             cursor: pointer !important;
         }
 
@@ -146,16 +146,20 @@
         {
                 
         <div class="controls">
-                <div class="act close"></div>
+                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
                 <div class="act minimize"></div>
                 <div class="act fullScreen"></div>
         </div>
             <div class="newHolder">
                     <h2>Enter your new data</h2>
+                    @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <p style="color: red;">@errorMessage</p>
+                }
                     <input type="text" placeholder="Enter your Account name/User name" @bind="userId">
                     <input type="password" placeholder="Enter your new password" @bind="userPassword">
                     <input type="password" placeholder="conform your new password" @bind="userPasswordConf">
-                    <button type="submit" class="summit" @onclick="createNewUser">SUMMIT</button>
+                    <button type="submit" class="summit" @onclick="createNewUser" disabled="@isProcessing">SUMMIT</button>
             </div>
         }
     </div>
@@ -163,6 +167,7 @@
     <ul>
         @foreach (var i in listUser)
         {
+            
             <li class="showUsers"> @i.UserId</li>
         }
     </ul>
@@ -179,21 +184,43 @@
     private  int userCounter = 0;
     bool isClicked = false;
 private static List<OnlineATM.UserAccount> listUser = new List<OnlineATM.UserAccount>();
-    private void createNewUser()
+   private string errorMessage = string.Empty;
+
+private void createNewUser()
+{
+    if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(userPassword))
     {
-        if (userPassword == userPasswordConf && userId != "" && userPassword != "")
-        {
-            ++userCounter;
-            listUser.Add(new OnlineATM.UserAccount(userId, userPassword));
-            isClicked = false;
-            ClearForm();
-        }
+        errorMessage = "All fields are required!";
+        return;
     }
+
+    if (userPassword != userPasswordConf)
+    {
+        errorMessage = "Passwords do not match!";
+        return;
+    }
+
+    ++userCounter;
+    listUser.Add(new OnlineATM.UserAccount(userId, userPassword));
+    isClicked = false;
+    ClearForm();
+    errorMessage = string.Empty;
+}
     private void ClearForm()
     {
         userId = string.Empty;
         userPassword = string.Empty;
         userPasswordConf = string.Empty;
     }
+    private bool isProcessing = false;
+ private async Task close()
+{
+    isProcessing = true;
+    isClicked = false;
+    StateHasChanged();  
+    await Task.Delay(1000);
+    ClearForm();
+    isProcessing = false;
 
+}
 }
