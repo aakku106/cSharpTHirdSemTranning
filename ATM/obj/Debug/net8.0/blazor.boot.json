@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ATM",
   "resources": {
-    "hash": "sha256-MnByfrKmLcXnpgoh8rQ1jhsAXyf8YPVfD2P3LGBTC3U=",
+    "hash": "sha256-fuKdxhOgNn9fbMdSKliUry1Fn7qofO2bLCcaU03iBfc=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-04e4k5XU8HWGB/dq/2+j84xzzGPflTs0IYWI0OxogVc=",
       "netstandard.wasm": "sha256-gnGZURPnoSmjXuYNCOJi5tt8qn2LRImWgue1Ru3/TDQ=",
       "System.Private.CoreLib.wasm": "sha256-6w3jYr0arcp8jnt4aeqh+AmqrLA6q7jl9rQYAwLzE0M=",
-      "ATM.wasm": "sha256-jClZ5L5fbL5fFd+1SVK4GgmA4Ffw0xi3J+jF+o3bNAs="
+      "ATM.wasm": "sha256-/QaAKFoMu+yOM6oaLi9A73A+18pWzwrftuOwjxi95hM="
     },
     "pdb": {
-      "ATM.pdb": "sha256-anCsF2fdWbo6qWNnfnnXDh6K1XYYg9YnOsj9vGfUlz8="
+      "ATM.pdb": "sha256-7Z0oy7pkCWk1mTqRtmoqF8EQFAJx8OORWugY5Xl8GIk="
     }
   },
   "cacheBootResources": true,

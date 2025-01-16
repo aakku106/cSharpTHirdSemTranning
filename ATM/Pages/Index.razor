@@ -1,5 +1,4 @@
 ﻿@page "/"
-@* @rendermode InteractiveServer *@
 
 <style>
     *{
@@ -147,30 +146,23 @@
 
 
 
-        .UserDetails{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                box-shadow: 0px 0px 0px 60px rgba(10, 10, 10, 0.396);
-                @* gap: 10px; *@
-                padding: 20px;
-                border-radius: 10px;
-                background-color:transparent;
-                backdrop-filter: blur(2.6px);
-                background: linear-gradient(120deg,#b32c408d, #0fa54452);
-                background-size: 1px;
-                color: white;
-                width: 90vw;
-                height: 90vh;    
-        }
-         .HoldDetails{
-             position: relative;               
-            width: 80vw;
-            height: 80vh
-            border:1px solid red;
-            border:2px solid yellow;
-        }
+.UserDetails{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 0px 60px rgba(10, 10, 10, 0.396);
+    padding: 20px;
+    border-radius: 10px;
+    background-color:transparent;
+    backdrop-filter: blur(2.6px);
+    background: linear-gradient(120deg,#b32c408d, #0fa54452);
+    background-size: 1px;
+    color: white;
+    width: 90vw;
+    height: 90vh;   
+}
+        
 </style>
 
 
@@ -226,7 +218,18 @@
 
 <div class="UserDetails">
     <div class="act close" @onclick:stopPropagation @onclick="close"></div>
-    <div class="HoldDetails">weeeeeeee</div>
+    <div class="HoldDetails">
+        <h3>Amount: @userAmount</h3>
+        <button class="deposit" @onclick="deposit">deposit</button>
+        <button class="withdraw">withdraw</button>
+        <br><br><br>
+        @if(isDeposit){
+            <input type="number" @bind="userAmount">
+        } else if(isWithdraw){
+            <input type="number">
+        }
+
+    </div>
 
 </div>
 }
@@ -237,11 +240,13 @@
     private  string userId = string.Empty;
     private string userPassword = string.Empty;
     private string userPasswordConf = string.Empty;
-
+    private decimal userAmount= 0;
+    private bool isDeposit=false;
+    private bool isWithdraw=false;
     private  int userCounter = 0;
     bool isClicked = false;
 private static List<OnlineATM.UserAccount> listUser = new List<OnlineATM.UserAccount>();
-   private string errorMessage = string.Empty;
+    private string errorMessage = string.Empty;
 
 private void createNewUser()
 {
@@ -264,11 +269,28 @@ private void createNewUser()
     errorMessage = string.Empty;
 }
 
+
+
+
 private bool ifShowUserDetails=false;
 
 private void ShowUserDetails(){
     ifShowUserDetails=true;
+    userAmount=0;
 }
+
+private void deposit(){
+    isDeposit=true;
+   
+}
+private void withdraw(){
+    isWithdraw=true;
+   
+}
+
+
+
+
 
 
 

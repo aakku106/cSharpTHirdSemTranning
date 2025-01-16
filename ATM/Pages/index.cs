@@ -11,4 +11,14 @@ namespace OnlineATM
             UserPassword = userPassword;
         }
     }
+
+
+    public class ShowUserDetails
+    {
+        public decimal UserAmount { get; private set; }
+        public ShowUserDetails(decimal money)
+        {
+            UserAmount = money;
+        }
+    }
 }
