@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R4SAomMDw2UmZSP8rNY542hJ6b23swRgKbeeULaoGdA=",
+  "Hash": "sF0maLANpWXNvpdtS5225bjT4bEzCuBohRoA3UiBgfI=",
   "Source": "ATM",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "3qgs0yiytf",
-      "Integrity": "VVQ1S5bE0pWjUl+iMJFAFXhEPc/Qjolt71r+NG4hYhg=",
+      "Fingerprint": "nhvkvx8mwt",
+      "Integrity": "a3+u+VvWxlYo3VXbzltT+hr5O2jB3/zx9hp8bAvY9jc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net7.0/ATM.dll"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "thpaph02a6",
-      "Integrity": "kbz7QmP8RERZj2MyUojwAPYjP5eBuQS1cWMNXrv17SU=",
+      "Fingerprint": "6r21gllfvb",
+      "Integrity": "Mlj3APP5gOME0R+cbSyH2bJjennzz60h69mXzT0SbXg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net7.0/ATM.pdb"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "sog43bd5ph",
-      "Integrity": "fCyd/U78zkcijiv/89/FQbdo9WLPVEdyQ+GjsPHbfKU=",
+      "Fingerprint": "j7uhjx26iq",
+      "Integrity": "L2oQpmMwBe1gdRqIc+aaW0dyrxYZY6SQgy6fl0WsTxI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net7.0/blazor.boot.json"
@@ -4658,7 +4658,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/System.IO.IsolatedStorage.dll"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/3ujntvsizk-thpaph02a6.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/3ujntvsizk-6r21gllfvb.gz",
       "SourceId": "ATM",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/",
@@ -4672,8 +4672,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/ATM.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "f9wz139v5w",
-      "Integrity": "7ZTWjB7yCkr9sMo5CyiYQjUHEpc2R+XEOOGJMKmoOjo=",
+      "Fingerprint": "nxw169sk8c",
+      "Integrity": "+6bFCmr5gY5CxkUmtlBR01/2Mmi14vlwARB+EMYmBhs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/ATM.pdb"
@@ -6947,7 +6947,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/System.Text.Encoding.CodePages.dll"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/mju9cjhfcv-3qgs0yiytf.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/mju9cjhfcv-nhvkvx8mwt.gz",
       "SourceId": "ATM",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/",
@@ -6961,8 +6961,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/ATM.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dfme3o4ycn",
-      "Integrity": "CWx/OEiOlggBljxm3jRXDdnRNJMb9EaD012XR/9G6lQ=",
+      "Fingerprint": "x5js9fdwi6",
+      "Integrity": "BWUg/o2ulsdj+C4n4nv8WRy7kChJRRtxic3SdP+VDJU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/ATM.dll"
@@ -7829,7 +7829,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/System.Security.dll"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/u0gs5y19dk-sog43bd5ph.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/u0gs5y19dk-j7uhjx26iq.gz",
       "SourceId": "ATM",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/",
@@ -7843,8 +7843,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6x8csd16xp",
-      "Integrity": "1selbXiYToyc2UiYRa6XWn/moR3BxUn4I9rtVifTtTk=",
+      "Fingerprint": "hx8pm01tis",
+      "Integrity": "i+A7V/4mo/X78/VW7BGW7sjJYQCwbUF6UeVMd5HOb6I=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/ATM/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json"
@@ -8555,7 +8555,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13824"
+          "Value": "19456"
         },
         {
           "Name": "Content-Type",
@@ -8563,11 +8563,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VVQ1S5bE0pWjUl+iMJFAFXhEPc/Qjolt71r+NG4hYhg=\""
+          "Value": "\"a3+u+VvWxlYo3VXbzltT+hr5O2jB3/zx9hp8bAvY9jc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:53:03 GMT"
+          "Value": "Thu, 16 Jan 2025 17:29:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8577,18 +8577,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VVQ1S5bE0pWjUl+iMJFAFXhEPc/Qjolt71r+NG4hYhg="
+          "Value": "sha256-a3+u+VvWxlYo3VXbzltT+hr5O2jB3/zx9hp8bAvY9jc="
         }
       ]
     },
     {
       "Route": "_framework/ATM.dll",
-      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/mju9cjhfcv-3qgs0yiytf.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/mju9cjhfcv-nhvkvx8mwt.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000146606069"
+          "Quality": "0.000130770237"
         }
       ],
       "ResponseHeaders": [
@@ -8598,15 +8598,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6820"
+          "Value": "7646"
         },
         {
           "Name": "ETag",
-          "Value": "\"CWx/OEiOlggBljxm3jRXDdnRNJMb9EaD012XR/9G6lQ=\""
+          "Value": "\"BWUg/o2ulsdj+C4n4nv8WRy7kChJRRtxic3SdP+VDJU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:30:56 GMT"
+          "Value": "Thu, 16 Jan 2025 17:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8626,19 +8626,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VVQ1S5bE0pWjUl+iMJFAFXhEPc/Qjolt71r+NG4hYhg=\""
+          "Value": "W/\"a3+u+VvWxlYo3VXbzltT+hr5O2jB3/zx9hp8bAvY9jc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VVQ1S5bE0pWjUl+iMJFAFXhEPc/Qjolt71r+NG4hYhg="
+          "Value": "sha256-a3+u+VvWxlYo3VXbzltT+hr5O2jB3/zx9hp8bAvY9jc="
         }
       ]
     },
     {
       "Route": "_framework/ATM.dll.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/mju9cjhfcv-3qgs0yiytf.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/mju9cjhfcv-nhvkvx8mwt.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8647,7 +8647,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6820"
+          "Value": "7646"
         },
         {
           "Name": "Content-Type",
@@ -8655,11 +8655,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CWx/OEiOlggBljxm3jRXDdnRNJMb9EaD012XR/9G6lQ=\""
+          "Value": "\"BWUg/o2ulsdj+C4n4nv8WRy7kChJRRtxic3SdP+VDJU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:30:56 GMT"
+          "Value": "Thu, 16 Jan 2025 17:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8677,7 +8677,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CWx/OEiOlggBljxm3jRXDdnRNJMb9EaD012XR/9G6lQ="
+          "Value": "sha256-BWUg/o2ulsdj+C4n4nv8WRy7kChJRRtxic3SdP+VDJU="
         }
       ]
     },
@@ -8692,7 +8692,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18576"
+          "Value": "19808"
         },
         {
           "Name": "Content-Type",
@@ -8700,11 +8700,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kbz7QmP8RERZj2MyUojwAPYjP5eBuQS1cWMNXrv17SU=\""
+          "Value": "\"Mlj3APP5gOME0R+cbSyH2bJjennzz60h69mXzT0SbXg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:53:03 GMT"
+          "Value": "Thu, 16 Jan 2025 17:29:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8714,18 +8714,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kbz7QmP8RERZj2MyUojwAPYjP5eBuQS1cWMNXrv17SU="
+          "Value": "sha256-Mlj3APP5gOME0R+cbSyH2bJjennzz60h69mXzT0SbXg="
         }
       ]
     },
     {
       "Route": "_framework/ATM.pdb",
-      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/3ujntvsizk-thpaph02a6.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/3ujntvsizk-6r21gllfvb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000077387401"
+          "Quality": "0.000072859745"
         }
       ],
       "ResponseHeaders": [
@@ -8735,15 +8735,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12921"
+          "Value": "13724"
         },
         {
           "Name": "ETag",
-          "Value": "\"7ZTWjB7yCkr9sMo5CyiYQjUHEpc2R+XEOOGJMKmoOjo=\""
+          "Value": "\"+6bFCmr5gY5CxkUmtlBR01/2Mmi14vlwARB+EMYmBhs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:30:56 GMT"
+          "Value": "Thu, 16 Jan 2025 17:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8763,19 +8763,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kbz7QmP8RERZj2MyUojwAPYjP5eBuQS1cWMNXrv17SU=\""
+          "Value": "W/\"Mlj3APP5gOME0R+cbSyH2bJjennzz60h69mXzT0SbXg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kbz7QmP8RERZj2MyUojwAPYjP5eBuQS1cWMNXrv17SU="
+          "Value": "sha256-Mlj3APP5gOME0R+cbSyH2bJjennzz60h69mXzT0SbXg="
         }
       ]
     },
     {
       "Route": "_framework/ATM.pdb.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/3ujntvsizk-thpaph02a6.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/3ujntvsizk-6r21gllfvb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8784,7 +8784,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12921"
+          "Value": "13724"
         },
         {
           "Name": "Content-Type",
@@ -8792,11 +8792,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7ZTWjB7yCkr9sMo5CyiYQjUHEpc2R+XEOOGJMKmoOjo=\""
+          "Value": "\"+6bFCmr5gY5CxkUmtlBR01/2Mmi14vlwARB+EMYmBhs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:30:56 GMT"
+          "Value": "Thu, 16 Jan 2025 17:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8814,7 +8814,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7ZTWjB7yCkr9sMo5CyiYQjUHEpc2R+XEOOGJMKmoOjo="
+          "Value": "sha256-+6bFCmr5gY5CxkUmtlBR01/2Mmi14vlwARB+EMYmBhs="
         }
       ]
     },
@@ -8837,11 +8837,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fCyd/U78zkcijiv/89/FQbdo9WLPVEdyQ+GjsPHbfKU=\""
+          "Value": "\"L2oQpmMwBe1gdRqIc+aaW0dyrxYZY6SQgy6fl0WsTxI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:53:03 GMT"
+          "Value": "Thu, 16 Jan 2025 17:29:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8851,18 +8851,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fCyd/U78zkcijiv/89/FQbdo9WLPVEdyQ+GjsPHbfKU="
+          "Value": "sha256-L2oQpmMwBe1gdRqIc+aaW0dyrxYZY6SQgy6fl0WsTxI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/u0gs5y19dk-sog43bd5ph.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/u0gs5y19dk-j7uhjx26iq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000114259598"
+          "Quality": "0.000114246544"
         }
       ],
       "ResponseHeaders": [
@@ -8872,15 +8872,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8751"
+          "Value": "8752"
         },
         {
           "Name": "ETag",
-          "Value": "\"1selbXiYToyc2UiYRa6XWn/moR3BxUn4I9rtVifTtTk=\""
+          "Value": "\"i+A7V/4mo/X78/VW7BGW7sjJYQCwbUF6UeVMd5HOb6I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:30:56 GMT"
+          "Value": "Thu, 16 Jan 2025 17:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8900,19 +8900,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fCyd/U78zkcijiv/89/FQbdo9WLPVEdyQ+GjsPHbfKU=\""
+          "Value": "W/\"L2oQpmMwBe1gdRqIc+aaW0dyrxYZY6SQgy6fl0WsTxI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fCyd/U78zkcijiv/89/FQbdo9WLPVEdyQ+GjsPHbfKU="
+          "Value": "sha256-L2oQpmMwBe1gdRqIc+aaW0dyrxYZY6SQgy6fl0WsTxI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/u0gs5y19dk-sog43bd5ph.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/u0gs5y19dk-j7uhjx26iq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8921,7 +8921,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8751"
+          "Value": "8752"
         },
         {
           "Name": "Content-Type",
@@ -8929,11 +8929,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1selbXiYToyc2UiYRa6XWn/moR3BxUn4I9rtVifTtTk=\""
+          "Value": "\"i+A7V/4mo/X78/VW7BGW7sjJYQCwbUF6UeVMd5HOb6I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 12:30:56 GMT"
+          "Value": "Thu, 16 Jan 2025 17:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8951,7 +8951,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1selbXiYToyc2UiYRa6XWn/moR3BxUn4I9rtVifTtTk="
+          "Value": "sha256-i+A7V/4mo/X78/VW7BGW7sjJYQCwbUF6UeVMd5HOb6I="
         }
       ]
     },

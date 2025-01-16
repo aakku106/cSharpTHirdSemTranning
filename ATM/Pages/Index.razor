@@ -2,29 +2,76 @@
 @* @rendermode InteractiveServer *@
 
 <style>
+    *{
+        transition: all 0.3s ease-in-out;
+    }
     body {
         background-color: blanchedalmond;
 
         h1 {
             text-align: center;
         }
+        button{
+            cursor: pointer !important;
+        }
+
+        input {
+            @* background-color: red; *@
+            width: 32.7vw;
+            height: 5vh;
+            box-shadow: 0px 0px 5px;
+            &:hover{
+                background-color: #32c4b125;
+            }
+            &:active{
+                box-shadow: 0px 0px 10px;
+                background-color: #f3f178ea;
+            }
+        }
+        .summit{
+            width: 32.7vw;
+            height: 5vh;
+            box-shadow: 0px 0px 5px;
+            &:hover{
+                background-color: #32c4b125;
+            }
+            &:active{
+                box-shadow: 0px 0px 10px;
+                background-color: #f3f178ea;
+            }
+        }
 
         .content {
             padding: 5vw;
 
             background-color: bisque;
-            border-radius: 10vw;
+            border-radius: 20px;
 
-            h2 {
+            .topic2 {
                 text-align: center;
+                background-color: #114c2616;
+                padding: 15px;
+                border-radius: 10px;
             }
 
             .newHolder {
                 position: absolute;
-                top: 50%;
-                right: 50%;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 text-align: center;
-
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                box-shadow: 0px 0px 15px;
+                gap: 10px;
+                padding: 20px;
+                border-radius: 10px;
+                background-color:transparent;
+                backdrop-filter: blur(2.6px);
+                background: linear-gradient(120deg,#b32c408d, #0fa54452);
+                background-size: 1px;
+                color: white;
             }
 
             #createNewUser {
@@ -36,9 +83,34 @@
                 top: 10px;
                 right: 10px;
             }
-
         }
     }
+
+    .showUsers {
+        padding: 15px;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: #ffffff5e;
+            cursor: pointer;
+        }
+    }
+
+    .act{
+        position: absolute;
+         top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+     .close{
+            background-color: red;
+        }
+    .minimize{
+            background-color: yellow;
+        }
+    .fullScreen{
+            background-color: green;
+        }
 </style>
 
 
@@ -47,22 +119,27 @@
 <div class="content">
     @if (userCounter == 0)
     {
-        <h2>No USERS Available </h2>
+        <h2 class="topic2" style="background-color: rgba(255, 0, 0, 0.048);">No USERS Available </h2>
     }
     else
     {
-        <h2>USERS Available : @userCounter </h2>
+        <h2 class="topic2">USERS Available: @userCounter</h2>
     }
 
     <div class="addUser">
         <button id="createNewUser" @onclick="() => isClicked = true">Create new Account</button>
         @if (isClicked == true)
         {
+                
             <div class="newHolder">
-                <input type="text" placeholder="Enter your Account name/User name" @bind="userId">
-                <input type="password" placeholder="Enter your new password" @bind="userPassword">
-                <input type="password" placeholder="conform your new password" @bind="userPasswordConf">
-                <button type="submit" class="summit" @onclick="createNewUser">SUMMIT</button>
+                <div class="act close"></div>
+                <div class="act minimize">2</div>
+                <div class="act fullScreen">3</div>
+                    <h2>Enter your new data</h2>
+                    <input type="text" placeholder="Enter your Account name/User name" @bind="userId">
+                    <input type="password" placeholder="Enter your new password" @bind="userPassword">
+                    <input type="password" placeholder="conform your new password" @bind="userPasswordConf">
+                    <button type="submit" class="summit" @onclick="createNewUser">SUMMIT</button>
             </div>
         }
     </div>
@@ -79,18 +156,18 @@
 
 
 @code {
-    private static string userId = string.Empty;
-    private static decimal initialAmount = 10;
+    private  string userId = string.Empty;
+    private  decimal initialAmount = 10;
     private string userPassword = string.Empty;
     private string userPasswordConf = string.Empty;
 
-    private static int userCounter = 0;
+    private  int userCounter = 0;
     bool isClicked = false;
     private static List<OnlineATM.Index> listUser = new List<OnlineATM.Index>();
 
     private void createNewUser()
     {
-        if (userPassword == userPasswordConf)
+        if (userPassword == userPasswordConf && userId != "" && userPassword != "")
         {
             ++userCounter;
             listUser.Add(new OnlineATM.Index(userId, userPassword, initialAmount));
