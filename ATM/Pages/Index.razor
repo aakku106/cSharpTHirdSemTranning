@@ -1,5 +1,20 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<style>
+    body {
+        background-color: blanchedalmond;
 
-<div>weeeeeeeeeeeeee</div>
+        h1 {
+            text-align: center;
+        }
+    }
+</style>
+
+
+<h1>Hello,WELCOME to CCN ATM service!</h1>
+
+
+@code {
+    private string userId = string.Empty;
+    private static List<OnlineATM.Index> listUser = new List<OnlineATM.Index>();
+}
