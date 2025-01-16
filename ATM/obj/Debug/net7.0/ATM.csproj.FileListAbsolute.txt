@@ -827,6 +827,6 @@
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/refint/ATM.dll
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/ATM.pdb
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/ref/ATM.dll
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/mju9cjhfcv-9omffihjr9.gz
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/3ujntvsizk-01r1ub8cg6.gz
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/u0gs5y19dk-0z46sq5h2e.gz
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/mju9cjhfcv-3qgs0yiytf.gz
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/3ujntvsizk-thpaph02a6.gz
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net7.0/compressed/u0gs5y19dk-sog43bd5ph.gz

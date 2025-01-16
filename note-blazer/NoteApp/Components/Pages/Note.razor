@@ -66,11 +66,13 @@
         height: 40vw;
         display: none;
     }
-.displayRapper{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-}
+
+    .displayRapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+
     .AddedNote {
         max-width: fit-content;
         background-color: #282825a3;
@@ -81,95 +83,109 @@
         text-align: left;
         transition: all .7s ease-in-out;
 
-            &:hover{
-                cursor: pointer;
-                background-color: #dbdb25af !important;
-                box-shadow: 0px 0px 10px #dbdb25ec;
+        &:hover {
+            cursor: pointer;
+            background-color: #dbdb25af !important;
+            box-shadow: 0px 0px 10px #dbdb25ec;
 
-                .titL{
-                    color: rgb(22, 109, 14);  
-                }
-                .dec{
-                    color: black;
-                }
-                .hideShow{
-                    display: inline;
-                }
+            .titL {
+                color: rgb(22, 109, 14);
             }
+
+            .dec {
+                color: black;
+            }
+
+            .hideShow {
+                display: inline;
+            }
+        }
     }
 
     .titL {
         font-size: 2.3rem;
         padding: 1vw !important;
         text-align: center;
-                transition: all .3s ease-in-out;
-        &:hover{
-          
-        }
+        transition: all .3s ease-in-out;
+
+        &:hover {}
 
     }
+
     .dec {
         padding: 1vw !important;
         font-size: 0.8rem;
         color: rgb(192, 182, 182);
-                transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
-    .cBtt{
+
+    .cBtt {
         margin: 1vw;
     }
 
 
 
-    .hideShow{
+    .hideShow {
         display: none;
     }
 
- .hide{
+    .hide {
         display: none;
     }
-    .show{display: block;}
+
+    .show {
+        display: block;
+    }
 </style>
 
 <h1 class="round p-3 caT">NOTE: @counter </h1>
 <article class="border container center round ">
     <form>
-    <div class="title">
-        <p>Title</p>
-        <input type="text " class="round input" @bind="title" placeholder="Enter the title of note" >
-    </div>
-    <div class="description round">
-        <p>description</p>
-        <textarea class="round input" @bind="description" placeholder="ENter the description of the note " ></textarea>
-    </div>
-    <button class="AddNote btn-primary" @onclick="addClick">AddNote</button>
+        <div class="title">
+            <p>Title</p>
+            <input type="text " class="round input" @bind="title" placeholder="Enter the title of note">
+        </div>
+        <div class="description round">
+            <p>description</p>
+            <textarea class="round input" @bind="description"
+                placeholder="ENter the description of the note "></textarea>
+        </div>
+        <button class="AddNote btn-primary" @onclick="addClick">AddNote</button>
     </form>
 </article>
 <div class="displayRapper">
 
     @foreach (var i in ListNote)
     {
-        
+
         <ul class="AddedNote">
             <li class="titL">@i.Counter
                 <u>
-                        <input type="checkbox" class="hideShow cBtt"  @bind="i.IsTicked" >
-                    @if(i.IsTicked&&!i.IsEdit){
-                                <strike>
-                                    @i.Title  
-                                </strike>
-                            <button class="btn btn-outline-danger round cBtt" @onclick="()=>clear(i)" >Done</button> 
-                        }else if(!i.IsEdit&&!i.IsTicked){
-                            @i.Title  
-                            <button class="btn btn-outline-success round cBtt hideShow " @onclick="()=>edit(i)" >Edit</button> 
-                        }else if(i.IsEdit&&!i.IsTicked){
-                                <input @bind="i.Title">
-                            <button class="btn btn-outline-primary round cBtt hideShow" @onclick="()=>edit(i)" >Save</button> 
-                        }else{
-                            <strike>
-                                @i.Title  
-                            </strike>
-                            <button class="btn btn-outline-danger round cBtt" @onclick="()=>clear(i)" >Done</button> 
-                        }
+                    <input type="checkbox" class="hideShow cBtt" @bind="i.IsTicked">
+                    @if (i.IsTicked && !i.IsEdit)
+                    {
+                        <strike>
+                            @i.Title
+                        </strike>
+                        <button class="btn btn-outline-danger round cBtt" @onclick="()=>clear(i)">Done</button>
+                    }
+                    else if (!i.IsEdit && !i.IsTicked)
+                    {
+                        @i.Title
+                        <button class="btn btn-outline-success round cBtt hideShow " @onclick="()=>edit(i)">Edit</button>
+                    }
+                    else if (i.IsEdit && !i.IsTicked)
+                    {
+                        <input @bind="i.Title">
+                        <button class="btn btn-outline-primary round cBtt hideShow" @onclick="()=>edit(i)">Save</button>
+                    }
+                    else
+                    {
+                        <strike>
+                            @i.Title
+                        </strike>
+                        <button class="btn btn-outline-danger round cBtt" @onclick="()=>clear(i)">Done</button>
+                    }
                 </u>
             </li>
             <li class="dec"> <span> @i.Description</span></li>
@@ -178,7 +194,7 @@
 </div>
 
 @code {
-    static int counter=0;
+    static int counter = 0;
     string title = string.Empty;
     string description = string.Empty;
     private static List<NoteApp.Note> ListNote = new List<NoteApp.Note>();
@@ -187,7 +203,7 @@
         if (title != "" && description != "")
         {
             ++counter;
-            ListNote.Add(new NoteApp.Note(title, description,counter));
+            ListNote.Add(new NoteApp.Note(title, description, counter));
         }
     }
     void clear(NoteApp.Note n)
@@ -195,8 +211,9 @@
         --counter;
         ListNote.Remove(n);
     }
-    void edit(NoteApp.Note e){
-        e.IsEdit=!e.IsEdit;
+    void edit(NoteApp.Note e)
+    {
+        e.IsEdit = !e.IsEdit;
     }
 
 }
