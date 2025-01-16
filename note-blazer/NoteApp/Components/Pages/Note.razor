@@ -72,7 +72,6 @@
     flex-wrap: wrap-reverse;
 }
     .AddedNote {
-        @* width: auto; *@
         max-width: fit-content;
         background-color: #282825a3;
         margin: 2vw;
@@ -122,13 +121,18 @@
 
 
     .hideShow{
-        display: @h_s;
+        display: none;
     }
+
+ .hide{
+        display: none;
+    }
+    .show{display: block;}
 </style>
 
 <h1 class="round p-3 caT">NOTE: @counter </h1>
 <article class="border container center round ">
-    @* <form> *@
+    <form>
     <div class="title">
         <p>Title</p>
         <input type="text " class="round input" @bind="title" placeholder="Enter the title of note" >
@@ -138,7 +142,7 @@
         <textarea class="round input" @bind="description" placeholder="ENter the description of the note " ></textarea>
     </div>
     <button class="AddNote btn-primary" @onclick="addClick">AddNote</button>
-    @* </form> *@
+    </form>
 </article>
 <div class="displayRapper">
 
@@ -174,21 +178,21 @@
 </div>
 
 @code {
-    static int counter=1;
+    static int counter=0;
     string title = string.Empty;
     string description = string.Empty;
-    private string h_s="none";
     private static List<NoteApp.Note> ListNote = new List<NoteApp.Note>();
     public void addClick()
     {
         if (title != "" && description != "")
         {
+            ++counter;
             ListNote.Add(new NoteApp.Note(title, description,counter));
-            counter++;
         }
     }
     void clear(NoteApp.Note n)
     {
+        --counter;
         ListNote.Remove(n);
     }
     void edit(NoteApp.Note e){
