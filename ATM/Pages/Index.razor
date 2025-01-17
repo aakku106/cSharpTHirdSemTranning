@@ -4,13 +4,16 @@
     * {
         transition: all 0.3s ease-in-out;
     }
+
     body {
         background-color: blanchedalmond;
 
         h1 {
             text-align: center;
         }
-        button, .act {
+
+        button,
+        .act {
             cursor: pointer !important;
         }
 
@@ -18,21 +21,26 @@
             width: 32.7vw;
             height: 5vh;
             box-shadow: 0px 0px 5px;
+
             &:hover {
                 background-color: #32c4b125;
             }
+
             &:active {
                 box-shadow: 0px 0px 10px;
                 background-color: #f3f178ea;
             }
         }
+
         .summit {
             width: 32.7vw;
             height: 5vh;
             box-shadow: 0px 0px 5px;
+
             &:hover {
                 background-color: rgba(0, 0, 255, 0.327);
             }
+
             &:active {
                 box-shadow: 0px 0px 10px;
                 background-color: #f3f178ea;
@@ -79,6 +87,7 @@
                 border-radius: 10px;
                 top: 10px;
                 right: 10px;
+
                 &:hover {
                     background-color: rgba(0, 0, 255, 0.327);
                 }
@@ -109,18 +118,21 @@
         left: 35.4%;
         transform: translate(-50%, -50%);
     }
+
     .close {
         width: 13px;
         height: 13px;
         border-radius: 50%;
         background-color: red;
     }
+
     .minimize {
         background-color: yellow;
         width: 13px;
         height: 13px;
         border-radius: 50%;
     }
+
     .fullScreen {
         background-color: green;
         width: 13px;
@@ -133,6 +145,7 @@
         background-color: rgba(31, 31, 155, 0.494);
         padding: 15px;
         border-radius: 10px;
+
         &:hover {
             background-color: rgba(0, 0, 255, 0.327);
         }
@@ -178,8 +191,8 @@
                 <div class="act fullScreen"></div>
             </div>
             <div class="newHolder">
-                <h2>Enter your new data</h2>
-                @if (!string.IsNullOrEmpty(errorMessage))
+            <h2>Enter your new data</h2>
+            @if (!string.IsNullOrEmpty(errorMessage))
                 {
                     <p style="color: red;">@errorMessage</p>
                 }
@@ -205,16 +218,20 @@
 @if (ifShowUserDetails && selectedUser != null)
 {
     <div class="UserDetails">
-        <div class="act close" @onclick:stopPropagation @onclick="close"></div>
-        <div class="HoldDetails">
-            <h3>Amount: @selectedUser.UserAmount</h3>
-            <button type="button" class="deposit" @onclick="deposit">Deposit</button>
-            <button type="button" class="withdraw" @onclick="withdraw">Withdraw</button>
-            <br /><br /><br />
-            @if (selectedUser.UserAmount <= userAmount)
+    <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+    <div class="HoldDetails">
+        <h3>Amount: @selectedUser.UserAmount</h3>
+        <button type="button" class="deposit" @onclick="deposit">Deposit</button>
+        <button type="button" class="withdraw" @onclick="withdraw">Withdraw</button>
+        <br /><br /><br />
+        @if (selectedUser.UserAmount <= userAmount)
             {
                 <p style="color: red;">@errorMessage</p>
-                <br /><br /><br />
+                <br />
+
+                <br />
+
+                <br />
             }
             @if (isDeposit)
             {
