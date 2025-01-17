@@ -1,7 +1,7 @@
 ﻿@page "/"
 
 <style>
-    *{
+    * {
         transition: all 0.3s ease-in-out;
     }
     body {
@@ -10,31 +10,30 @@
         h1 {
             text-align: center;
         }
-        button,.act{
+        button, .act {
             cursor: pointer !important;
         }
 
         input {
-            @* background-color: red; *@
             width: 32.7vw;
             height: 5vh;
             box-shadow: 0px 0px 5px;
-            &:hover{
+            &:hover {
                 background-color: #32c4b125;
             }
-            &:active{
+            &:active {
                 box-shadow: 0px 0px 10px;
                 background-color: #f3f178ea;
             }
         }
-        .summit{
+        .summit {
             width: 32.7vw;
             height: 5vh;
             box-shadow: 0px 0px 5px;
-            &:hover{
-                    background-color: rgba(0, 0, 255, 0.327);
-                }
-            &:active{
+            &:hover {
+                background-color: rgba(0, 0, 255, 0.327);
+            }
+            &:active {
                 box-shadow: 0px 0px 10px;
                 background-color: #f3f178ea;
             }
@@ -42,7 +41,6 @@
 
         .content {
             padding: 5vw;
-
             background-color: bisque;
             border-radius: 20px;
 
@@ -66,9 +64,9 @@
                 gap: 10px;
                 padding: 20px;
                 border-radius: 10px;
-                background-color:transparent;
+                background-color: transparent;
                 backdrop-filter: blur(2.6px);
-                background: linear-gradient(120deg,#b32c408d, #0fa54452);
+                background: linear-gradient(120deg, #b32c408d, #0fa54452);
                 background-size: 1px;
                 color: white;
             }
@@ -81,7 +79,7 @@
                 border-radius: 10px;
                 top: 10px;
                 right: 10px;
-                 &:hover{
+                &:hover {
                     background-color: rgba(0, 0, 255, 0.327);
                 }
             }
@@ -101,7 +99,7 @@
         }
     }
 
-    .controls{
+    .controls {
         position: absolute;
         display: flex;
         flex-direction: row !important;
@@ -110,68 +108,60 @@
         top: 22.3%;
         left: 35.4%;
         transform: translate(-50%, -50%);
-        
     }
-     .close{
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            background-color: red;
+    .close {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .minimize {
+        background-color: yellow;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+    }
+    .fullScreen {
+        background-color: green;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+    }
+
+    .ShowUserDetails {
+        text-align: center;
+        background-color: rgba(31, 31, 155, 0.494);
+        padding: 15px;
+        border-radius: 10px;
+        &:hover {
+            background-color: rgba(0, 0, 255, 0.327);
         }
-    .minimize{
-            background-color: yellow;
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-        }
-    .fullScreen{
-            background-color: green;
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-        }
+    }
 
-
-        .ShowUserDetails{
-           text-align: center;
-                background-color: rgba(31, 31, 155, 0.494);
-                padding: 15px;
-                border-radius: 10px;
-                &:hover{
-                    background-color: rgba(0, 0, 255, 0.327);
-                }
-        }
-
-
-
-
-
-.UserDetails{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 0px 60px rgba(10, 10, 10, 0.396);
-    padding: 20px;
-    border-radius: 10px;
-    background-color:transparent;
-    backdrop-filter: blur(2.6px);
-    background: linear-gradient(120deg,#b32c408d, #0fa54452);
-    background-size: 1px;
-    color: white;
-    width: 90vw;
-    height: 90vh;   
-}
-        
+    .UserDetails {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 0px 60px rgba(10, 10, 10, 0.396);
+        padding: 20px;
+        border-radius: 10px;
+        background-color: transparent;
+        backdrop-filter: blur(2.6px);
+        background: linear-gradient(120deg, #b32c408d, #0fa54452);
+        background-size: 1px;
+        color: white;
+        width: 90vw;
+        height: 90vh;
+    }
 </style>
 
-
-<h1>Hello,WELCOME to CCN ATM service!</h1>
+<h1>Hello, WELCOME to CCN ATM service!</h1>
 
 <div class="content">
     @if (userCounter == 0)
     {
-        <h2 class="topic2" style="background-color: rgba(255, 0, 0, 0.048);">No USERS Available </h2>
+        <h2 class="topic2" style="background-color: rgba(255, 0, 0, 0.048);">No USERS Available</h2>
     }
     else
     {
@@ -182,27 +172,27 @@
         <button id="createNewUser" @onclick="() => isClicked = true">Create new Account</button>
         @if (isClicked == true)
         {
-                
-        <div class="controls">
+            <div class="controls">
                 <div class="act close" @onclick:stopPropagation @onclick="close"></div>
                 <div class="act minimize"></div>
                 <div class="act fullScreen"></div>
-        </div>
+            </div>
             <div class="newHolder">
-                    <h2>Enter your new data</h2>
-                    @if (!string.IsNullOrEmpty(errorMessage))
+                <h2>Enter your new data</h2>
+                @if (!string.IsNullOrEmpty(errorMessage))
                 {
                     <p style="color: red;">@errorMessage</p>
                 }
-                    <input type="text" placeholder="Enter your Account name/User name" @bind="userId">
-                    <input type="password" placeholder="Enter your new password" @bind="userPassword">
-                    <input type="password" placeholder="conform your new password" @bind="userPasswordConf">
-                    <button type="submit" class="summit" @onclick="createNewUser" disabled="@isProcessing">SUMMIT</button>
+                <input type="text" placeholder="Enter your Account name/User name" @bind="userId">
+                <input type="password" placeholder="Enter your new password" @bind="userPassword">
+                <input type="password" placeholder="conform your new password" @bind="userPasswordConf">
+                <button type="submit" class="summit" @onclick="createNewUser" disabled="@isProcessing">SUBMIT</button>
             </div>
         }
     </div>
 </div>
-   <ul class="details">
+
+<ul class="details">
     @foreach (var user in listUser)
     {
         <li class="showUsers">
@@ -218,9 +208,14 @@
         <div class="act close" @onclick:stopPropagation @onclick="close"></div>
         <div class="HoldDetails">
             <h3>Amount: @selectedUser.UserAmount</h3>
-            <button class="deposit" @onclick="deposit">Deposit</button>
-            <button class="withdraw" @onclick="withdraw">Withdraw</button>
+            <button type="button" class="deposit" @onclick="deposit">Deposit</button>
+            <button type="button" class="withdraw" @onclick="withdraw">Withdraw</button>
             <br /><br /><br />
+            @if (selectedUser.UserAmount <= userAmount)
+            {
+                <p style="color: red;">@errorMessage</p>
+                <br /><br /><br />
+            }
             @if (isDeposit)
             {
                 <input type="number" placeholder="Enter Amount to Deposit" @bind="userAmount">
@@ -236,94 +231,88 @@
 }
 
 @code {
-    private  string userId = string.Empty;
+    private string userId = string.Empty;
     private string userPassword = string.Empty;
     private string userPasswordConf = string.Empty;
-    private decimal userAmount= 0;
-    private bool isDeposit=false;
-    private bool isWithdraw=false;
-    private  int userCounter = 0;
+    private decimal userAmount = 0;
+    private bool isDeposit = false;
+    private bool isWithdraw = false;
+    private int userCounter = 0;
     private bool isClicked = false;
-private static List<OnlineATM.UserAccount> listUser = new List<OnlineATM.UserAccount>();
+    private static List<OnlineATM.UserAccount> listUser = new List<OnlineATM.UserAccount>();
     private string errorMessage = string.Empty;
 
-private void createNewUser()
-{
-    if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(userPassword))
+    private void createNewUser()
     {
-        errorMessage = "All fields are required!";
-        return;
+        if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(userPassword))
+        {
+            errorMessage = "All fields are required!";
+            return;
+        }
+
+        if (userPassword != userPasswordConf)
+        {
+            errorMessage = "Passwords do not match!";
+            return;
+        }
+
+        ++userCounter;
+        listUser.Add(new OnlineATM.UserAccount(userId, userPassword));
+        isClicked = false;
+        ClearForm();
+        errorMessage = string.Empty;
     }
 
-    if (userPassword != userPasswordConf)
+    private bool ifShowUserDetails = false;
+    private OnlineATM.UserAccount? selectedUser = null;
+
+    private void showUserDetails(OnlineATM.UserAccount user)
     {
-        errorMessage = "Passwords do not match!";
-        return;
-    }
-
-    ++userCounter;
-    listUser.Add(new OnlineATM.UserAccount(userId, userPassword));
-    isClicked = false;
-    ClearForm();
-    errorMessage = string.Empty;
-}
-
-
-
-
-private bool ifShowUserDetails=false;
-private OnlineATM.UserAccount? selectedUser = null;
-
-private void showUserDetails(OnlineATM.UserAccount user)
-{
-    selectedUser = user;
-    ifShowUserDetails = true;
-    userAmount = 0;
-}
-
-private void deposit()
-{
-    isDeposit = true;
-    isWithdraw = false;
-}
-
-private void withdraw()
-{
-    isWithdraw = true;
-    isDeposit = false;
-}
-
-private void confirmDeposit()
-{
-    if (selectedUser != null && userAmount > 0)
-    {
-        selectedUser.UserAmount += userAmount;
+        selectedUser = user;
+        ifShowUserDetails = true;
         userAmount = 0;
+    }
+
+    private void deposit()
+    {
+        isDeposit = true;
+        isWithdraw = false;
+    }
+
+    private void withdraw()
+    {
+        isWithdraw = true;
         isDeposit = false;
     }
-}
 
-private void confirmWithdraw()
-{
-    if (selectedUser != null && userAmount > 0)
+    private void confirmDeposit()
     {
-        if (selectedUser.UserAmount >= userAmount)
+        if (selectedUser != null && userAmount > 0)
         {
-            selectedUser.UserAmount -= userAmount;
+            selectedUser.UserAmount += userAmount;
             userAmount = 0;
-            isWithdraw = false;
-        }
-        else
-        {
-            errorMessage = "Insufficient Balance!";
+            isDeposit = false;
+            errorMessage = string.Empty;
         }
     }
-}
 
-
-
-
-
+    private void confirmWithdraw()
+    {
+        if (selectedUser != null && userAmount > 0)
+        {
+            if (selectedUser.UserAmount >= userAmount)
+            {
+                selectedUser.UserAmount -= userAmount;
+                userAmount = 0;
+                isWithdraw = false;
+                errorMessage = string.Empty;
+            }
+            else
+            {
+                errorMessage = "Insufficient Balance!";
+            }
+        }
+    }
 
     private void ClearForm()
     {
@@ -331,16 +320,17 @@ private void confirmWithdraw()
         userPassword = string.Empty;
         userPasswordConf = string.Empty;
     }
-    private bool isProcessing = false;
- private async Task close()
-{
-    isProcessing = true;
-    isClicked = false;
-    ifShowUserDetails=false;
-    StateHasChanged();  
-    await Task.Delay(1000);
-    ClearForm();
-    isProcessing = false;
 
-}
+    private bool isProcessing = false;
+
+    private async Task close()
+    {
+        isProcessing = true;
+        isClicked = false;
+        ifShowUserDetails = false;
+        StateHasChanged();
+        await Task.Delay(1000);
+        ClearForm();
+        isProcessing = false;
+    }
 }
