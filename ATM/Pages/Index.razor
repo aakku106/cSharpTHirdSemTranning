@@ -201,40 +201,39 @@
             </div>
         }
     </div>
-
+</div>
    <ul class="details">
     @foreach (var user in listUser)
     {
         <li class="showUsers">
-           <p> @user.UserId</p>
-            <button class="ShowUserDetails" @onclick="ShowUserDetails"> Showdetails </button>
+            <p>@user.UserId</p>
+            <button class="ShowUserDetails" @onclick="() => showUserDetails(user)">Show Details</button>
         </li>
     }
 </ul>
-</div>
 
-@if(ifShowUserDetails==true){
-
-
-<div class="UserDetails">
-    <div class="act close" @onclick:stopPropagation @onclick="close"></div>
-    <div class="HoldDetails">
-        <h3>Amount: @userAmount</h3>
-        <button class="deposit" @onclick="deposit">deposit</button>
-        <button class="withdraw">withdraw</button>
-        <br><br><br>
-        @if(isDeposit){
-            <input type="number" @bind="userAmount">
-        } else if(isWithdraw){
-            <input type="number">
-        }
-
+@if (ifShowUserDetails && selectedUser != null)
+{
+    <div class="UserDetails">
+        <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+        <div class="HoldDetails">
+            <h3>Amount: @selectedUser.UserAmount</h3>
+            <button class="deposit" @onclick="deposit">Deposit</button>
+            <button class="withdraw" @onclick="withdraw">Withdraw</button>
+            <br /><br /><br />
+            @if (isDeposit)
+            {
+                <input type="number" placeholder="Enter Amount to Deposit" @bind="userAmount">
+                <button @onclick="confirmDeposit">CONFIRM DEPOSIT</button>
+            }
+            else if (isWithdraw)
+            {
+                <input type="number" placeholder="Enter Amount to Withdraw" @bind="userAmount">
+                <button @onclick="confirmWithdraw">CONFIRM WITHDRAW</button>
+            }
+        </div>
     </div>
-
-</div>
 }
-
-
 
 @code {
     private  string userId = string.Empty;
@@ -244,7 +243,7 @@
     private bool isDeposit=false;
     private bool isWithdraw=false;
     private  int userCounter = 0;
-    bool isClicked = false;
+    private bool isClicked = false;
 private static List<OnlineATM.UserAccount> listUser = new List<OnlineATM.UserAccount>();
     private string errorMessage = string.Empty;
 
@@ -273,21 +272,53 @@ private void createNewUser()
 
 
 private bool ifShowUserDetails=false;
+private OnlineATM.UserAccount? selectedUser = null;
 
-private void ShowUserDetails(){
-    ifShowUserDetails=true;
-    userAmount=0;
+private void showUserDetails(OnlineATM.UserAccount user)
+{
+    selectedUser = user;
+    ifShowUserDetails = true;
+    userAmount = 0;
 }
 
-private void deposit(){
-    isDeposit=true;
-   
-}
-private void withdraw(){
-    isWithdraw=true;
-   
+private void deposit()
+{
+    isDeposit = true;
+    isWithdraw = false;
 }
 
+private void withdraw()
+{
+    isWithdraw = true;
+    isDeposit = false;
+}
+
+private void confirmDeposit()
+{
+    if (selectedUser != null && userAmount > 0)
+    {
+        selectedUser.UserAmount += userAmount;
+        userAmount = 0;
+        isDeposit = false;
+    }
+}
+
+private void confirmWithdraw()
+{
+    if (selectedUser != null && userAmount > 0)
+    {
+        if (selectedUser.UserAmount >= userAmount)
+        {
+            selectedUser.UserAmount -= userAmount;
+            userAmount = 0;
+            isWithdraw = false;
+        }
+        else
+        {
+            errorMessage = "Insufficient Balance!";
+        }
+    }
+}
 
 
 

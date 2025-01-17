@@ -1017,9 +1017,6 @@
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/i34s8hzpjg-tptq2av103.gz
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/zr9349x74y-lfu7j35m59.gz
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/7emndsso70-oyz0vx2fzb.gz
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/6rbulbschx-zcv1o3mdzs.gz
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/3ujntvsizk-1bajnjsqvr.gz
-/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/u0gs5y19dk-xantc4jpsd.gz
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/staticwebassets.build.json
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/staticwebassets.development.json
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/staticwebassets.build.endpoints.json
@@ -1034,3 +1031,6 @@
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/refint/ATM.dll
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/ATM.pdb
 /Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/ref/ATM.dll
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/6rbulbschx-bu9gxakjeq.gz
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/3ujntvsizk-rc6l4ml3ep.gz
+/Users/aakku/Documents/Tranning/ATM/obj/Debug/net8.0/compressed/u0gs5y19dk-f8smhcq0vl.gz
