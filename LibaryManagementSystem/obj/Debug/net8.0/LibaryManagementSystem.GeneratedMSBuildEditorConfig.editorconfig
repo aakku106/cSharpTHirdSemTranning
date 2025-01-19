@@ -36,6 +36,46 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Librarian/EditDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlicmFyaWFuL0VkaXREZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Librarian/LibrarianDashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlicmFyaWFuL0xpYnJhcmlhbkRhc2hib2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Librarian/LibrarianLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlicmFyaWFuL0xpYnJhcmlhbkxvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Librarian/ManageBooks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlicmFyaWFuL01hbmFnZUJvb2tzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Librarian/ManageStudents.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlicmFyaWFuL01hbmFnZVN0dWRlbnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Student/BorrowBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3R1ZGVudC9Cb3Jyb3dCb29rLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Student/ReturnBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3R1ZGVudC9SZXR1cm5Cb29rLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Student/SearchBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3R1ZGVudC9TZWFyY2hCb29rLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Student/StudentDashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3R1ZGVudC9TdHVkZW50RGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/Tranning/LibaryManagementSystem/Pages/Student/StudentLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3R1ZGVudC9TdHVkZW50TG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aakku/Documents/Tranning/LibaryManagementSystem/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
