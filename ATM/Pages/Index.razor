@@ -219,37 +219,55 @@
 {
     <div class="UserDetails">
     <div class="act close" @onclick:stopPropagation @onclick="close"></div>
-    <div class="HoldDetails">
-        <h3>Amount: @selectedUser.UserAmount</h3>
-        <button type="button" class="deposit" @onclick="deposit">Deposit</button>
-        <button type="button" class="withdraw" @onclick="withdraw">Withdraw</button>
-        <br /><br /><br />
-        @if (selectedUser.UserAmount <= userAmount)
-            {
-                <p style="color: red;">@errorMessage</p>
-                <br />
+    @if (isPasswordInputVisible)
+        {
+            <input type="password" @bind="passwordCheck" placeholder="Enter user password.">
+            <button class="ShowUserDetails" @onclick="checkPassword">ENTER</button>
+        }
+        @if (isUserDetailVisible)
+        {
+            <div class="HoldDetails">
+                <h3>Amount: @selectedUser.UserAmount</h3>
+                <button type="button" class="deposit" @onclick="deposit">Deposit</button>
+                <button type="button" class="withdraw" @onclick="withdraw">Withdraw</button>
+                <br /><br /><br />
+                @if (selectedUser.UserAmount <= userAmount)
+                {
+                    <p style="color: red;">@errorMessage</p>
+                    <br />
 
-                <br />
+                    <br />
 
-                <br />
-            }
-            @if (isDeposit)
-            {
-                <input type="number" placeholder="Enter Amount to Deposit" @bind="userAmount">
-                <button @onclick="confirmDeposit">CONFIRM DEPOSIT</button>
-            }
-            else if (isWithdraw)
-            {
-                <input type="number" placeholder="Enter Amount to Withdraw" @bind="userAmount">
-                <button @onclick="confirmWithdraw">CONFIRM WITHDRAW</button>
-            }
-        </div>
+                    <br />
+                }
+                @if (isDeposit)
+                {
+                    <input type="number" placeholder="Enter Amount to Deposit" @bind="userAmount">
+                    <button @onclick="confirmDeposit">CONFIRM DEPOSIT</button>
+                }
+                else if (isWithdraw)
+                {
+                    <input type="number" placeholder="Enter Amount to Withdraw" @bind="userAmount">
+                    <button @onclick="confirmWithdraw">CONFIRM WITHDRAW</button>
+                }
+            </div>
+
+        }
+        else
+        {
+            <b style="color: red;">
+                <p>Enter The Correct Password</p>
+            </b>
+        }
     </div>
 }
 
 @code {
+    private bool isUserDetailVisible = false;
+    private bool isPasswordInputVisible = true;
     private string userId = string.Empty;
     private string userPassword = string.Empty;
+    private string passwordCheck = string.Empty;
     private string userPasswordConf = string.Empty;
     private decimal userAmount = 0;
     private bool isDeposit = false;
@@ -335,6 +353,7 @@
     {
         userId = string.Empty;
         userPassword = string.Empty;
+        passwordCheck = string.Empty;
         userPasswordConf = string.Empty;
     }
 
@@ -345,9 +364,22 @@
         isProcessing = true;
         isClicked = false;
         ifShowUserDetails = false;
+        isUserDetailVisible = false;
+        isPasswordInputVisible = true;
+        passwordCheck = string.Empty;
         StateHasChanged();
         await Task.Delay(1000);
         ClearForm();
         isProcessing = false;
     }
+
+    public void checkPassword()
+    {
+        if (selectedUser.UserPassword == passwordCheck)
+        {
+            isUserDetailVisible = true;
+            isPasswordInputVisible = false;
+        }
+    }
+
 }
