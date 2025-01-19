@@ -13,8 +13,8 @@
       "PackagePath": "staticwebassets/assets/student.png"
     },
     {
-      "Id": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/LibrarianLogin.css",
-      "PackagePath": "staticwebassets/css/LibrarianLogin.css"
+      "Id": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/Login.css",
+      "PackagePath": "staticwebassets/css/Login.css"
     },
     {
       "Id": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/app.css",

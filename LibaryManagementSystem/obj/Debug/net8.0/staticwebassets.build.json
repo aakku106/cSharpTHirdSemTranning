@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BsIHw2CcKYGCpgJusOxpFXbkJFsvr35zAgEvdhypEZk=",
+  "Hash": "qWljSjFRD0+erAzN2Phulc7pRozDTPTUGHlGJW+Nyb8=",
   "Source": "LibaryManagementSystem",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "7d9rsx7sti",
-      "Integrity": "1Wfi17FOf72j/LA7azplIOhkrGlB7OlEMAHFLJ71s8g=",
+      "Fingerprint": "mxnwnzfko8",
+      "Integrity": "1utfe06H5H3t+AgpgMyLx8R9aOBkfhN6gPlQrlcJOog=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net8.0/blazor.boot.json"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "2kvvdshpxt",
-      "Integrity": "fuGYpfO+iJLaMrDXlneTApUVQDc9ctmPLodAu4Olsqs=",
+      "Fingerprint": "jef13td03l",
+      "Integrity": "xbQCfSa05mKxmqErH3FKlx+J0Uczab1oEM/kJqBm1tE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net8.0/LibaryManagementSystem.pdb"
@@ -304,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "okw9xrmm02",
-      "Integrity": "2AVPZwOSeaz1PKg7GHYb4CiSPhgrwONIDW8xuTlO6bM=",
+      "Fingerprint": "z5d301897f",
+      "Integrity": "mTa3ZXANPG263YBaQZPbDsQt/BOSFWgRxTP4DKRXfmU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/webcil/LibaryManagementSystem.wasm"
@@ -4931,7 +4931,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/System.Console.wasm"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-7d9rsx7sti.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-mxnwnzfko8.gz",
       "SourceId": "LibaryManagementSystem",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/",
@@ -4945,8 +4945,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "unjwmiiqr8",
-      "Integrity": "dtaYOsMjBjiyiEb3OWSV7Wp31iBaAxLPEGXmbEJfovg=",
+      "Fingerprint": "ldel4ak58a",
+      "Integrity": "91d7BtZpnkHTXa5UqdUnIINaGfk73Pe0FqLoYro52dI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json"
@@ -6023,7 +6023,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/System.Xml.XPath.XDocument.wasm"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-2kvvdshpxt.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-jef13td03l.gz",
       "SourceId": "LibaryManagementSystem",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/",
@@ -6037,8 +6037,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/LibaryManagementSystem.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0x8auykh72",
-      "Integrity": "pHHA4zEebWF7vxjA+GByZnK2VqAKLIyeHLnHYZn3b3Y=",
+      "Fingerprint": "f38f79vn7n",
+      "Integrity": "u7GrMakgJpkdeS0ELPG9xUXrKKImZCABA1C0F1ZKGe4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/LibaryManagementSystem.pdb"
@@ -8102,7 +8102,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/System.Transactions.wasm"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-okw9xrmm02.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-z5d301897f.gz",
       "SourceId": "LibaryManagementSystem",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/",
@@ -8116,8 +8116,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/LibaryManagementSystem.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "e70u4263vk",
-      "Integrity": "drdaSojOSaCicgb1HGIkivXXanhtTXU7Ux1QohaHdb8=",
+      "Fingerprint": "thyxbwviy0",
+      "Integrity": "H/gDIorqCi/9eM1QII3s+ogTRfdC0RwlDYYJ1FfuxYc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/LibaryManagementSystem.wasm"
@@ -8690,12 +8690,12 @@
       "OriginalItemSpec": "wwwroot/css/app.css"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/LibrarianLogin.css",
+      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/Login.css",
       "SourceId": "LibaryManagementSystem",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "css/LibrarianLogin#[.{fingerprint}]?.css",
+      "RelativePath": "css/Login#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8704,11 +8704,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kgnsegwmkc",
-      "Integrity": "xPOkxp1XeZIEMxOSLcZLg3X64e7EkXr/PmHOG9gWlHc=",
+      "Fingerprint": "v98ttj58kv",
+      "Integrity": "3Xc8ymwUSqD7m/i4GwFvkOpaY3EFxLuFrHQhnfVIrQA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/LibrarianLogin.css"
+      "OriginalItemSpec": "wwwroot/css/Login.css"
     },
     {
       "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/index.html",
@@ -8752,11 +8752,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1Wfi17FOf72j/LA7azplIOhkrGlB7OlEMAHFLJ71s8g=\""
+          "Value": "\"1utfe06H5H3t+AgpgMyLx8R9aOBkfhN6gPlQrlcJOog=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:31:09 GMT"
+          "Value": "Sun, 19 Jan 2025 17:20:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8766,18 +8766,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1Wfi17FOf72j/LA7azplIOhkrGlB7OlEMAHFLJ71s8g="
+          "Value": "sha256-1utfe06H5H3t+AgpgMyLx8R9aOBkfhN6gPlQrlcJOog="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-7d9rsx7sti.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-mxnwnzfko8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000115008626"
+          "Quality": "0.000115021854"
         }
       ],
       "ResponseHeaders": [
@@ -8787,15 +8787,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8694"
+          "Value": "8693"
         },
         {
           "Name": "ETag",
-          "Value": "\"dtaYOsMjBjiyiEb3OWSV7Wp31iBaAxLPEGXmbEJfovg=\""
+          "Value": "\"91d7BtZpnkHTXa5UqdUnIINaGfk73Pe0FqLoYro52dI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:28:29 GMT"
+          "Value": "Sun, 19 Jan 2025 17:17:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8815,19 +8815,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1Wfi17FOf72j/LA7azplIOhkrGlB7OlEMAHFLJ71s8g=\""
+          "Value": "W/\"1utfe06H5H3t+AgpgMyLx8R9aOBkfhN6gPlQrlcJOog=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1Wfi17FOf72j/LA7azplIOhkrGlB7OlEMAHFLJ71s8g="
+          "Value": "sha256-1utfe06H5H3t+AgpgMyLx8R9aOBkfhN6gPlQrlcJOog="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-7d9rsx7sti.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-mxnwnzfko8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8836,7 +8836,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8694"
+          "Value": "8693"
         },
         {
           "Name": "Content-Type",
@@ -8844,11 +8844,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dtaYOsMjBjiyiEb3OWSV7Wp31iBaAxLPEGXmbEJfovg=\""
+          "Value": "\"91d7BtZpnkHTXa5UqdUnIINaGfk73Pe0FqLoYro52dI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:28:29 GMT"
+          "Value": "Sun, 19 Jan 2025 17:17:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8866,7 +8866,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dtaYOsMjBjiyiEb3OWSV7Wp31iBaAxLPEGXmbEJfovg="
+          "Value": "sha256-91d7BtZpnkHTXa5UqdUnIINaGfk73Pe0FqLoYro52dI="
         }
       ]
     },
@@ -10388,7 +10388,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27204"
+          "Value": "28784"
         },
         {
           "Name": "Content-Type",
@@ -10396,11 +10396,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fuGYpfO+iJLaMrDXlneTApUVQDc9ctmPLodAu4Olsqs=\""
+          "Value": "\"xbQCfSa05mKxmqErH3FKlx+J0Uczab1oEM/kJqBm1tE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:31:09 GMT"
+          "Value": "Sun, 19 Jan 2025 17:20:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10410,18 +10410,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fuGYpfO+iJLaMrDXlneTApUVQDc9ctmPLodAu4Olsqs="
+          "Value": "sha256-xbQCfSa05mKxmqErH3FKlx+J0Uczab1oEM/kJqBm1tE="
         }
       ]
     },
     {
       "Route": "_framework/LibaryManagementSystem.pdb",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-2kvvdshpxt.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-jef13td03l.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000050299281"
+          "Quality": "0.000047794293"
         }
       ],
       "ResponseHeaders": [
@@ -10431,15 +10431,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19880"
+          "Value": "20922"
         },
         {
           "Name": "ETag",
-          "Value": "\"pHHA4zEebWF7vxjA+GByZnK2VqAKLIyeHLnHYZn3b3Y=\""
+          "Value": "\"u7GrMakgJpkdeS0ELPG9xUXrKKImZCABA1C0F1ZKGe4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:27:28 GMT"
+          "Value": "Sun, 19 Jan 2025 17:17:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10459,19 +10459,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fuGYpfO+iJLaMrDXlneTApUVQDc9ctmPLodAu4Olsqs=\""
+          "Value": "W/\"xbQCfSa05mKxmqErH3FKlx+J0Uczab1oEM/kJqBm1tE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fuGYpfO+iJLaMrDXlneTApUVQDc9ctmPLodAu4Olsqs="
+          "Value": "sha256-xbQCfSa05mKxmqErH3FKlx+J0Uczab1oEM/kJqBm1tE="
         }
       ]
     },
     {
       "Route": "_framework/LibaryManagementSystem.pdb.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-2kvvdshpxt.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-jef13td03l.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10480,7 +10480,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19880"
+          "Value": "20922"
         },
         {
           "Name": "Content-Type",
@@ -10488,11 +10488,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pHHA4zEebWF7vxjA+GByZnK2VqAKLIyeHLnHYZn3b3Y=\""
+          "Value": "\"u7GrMakgJpkdeS0ELPG9xUXrKKImZCABA1C0F1ZKGe4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:27:28 GMT"
+          "Value": "Sun, 19 Jan 2025 17:17:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10510,7 +10510,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pHHA4zEebWF7vxjA+GByZnK2VqAKLIyeHLnHYZn3b3Y="
+          "Value": "sha256-u7GrMakgJpkdeS0ELPG9xUXrKKImZCABA1C0F1ZKGe4="
         }
       ]
     },
@@ -10525,7 +10525,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16661"
+          "Value": "20245"
         },
         {
           "Name": "Content-Type",
@@ -10533,11 +10533,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2AVPZwOSeaz1PKg7GHYb4CiSPhgrwONIDW8xuTlO6bM=\""
+          "Value": "\"mTa3ZXANPG263YBaQZPbDsQt/BOSFWgRxTP4DKRXfmU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:31:09 GMT"
+          "Value": "Sun, 19 Jan 2025 17:20:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10547,18 +10547,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2AVPZwOSeaz1PKg7GHYb4CiSPhgrwONIDW8xuTlO6bM="
+          "Value": "sha256-mTa3ZXANPG263YBaQZPbDsQt/BOSFWgRxTP4DKRXfmU="
         }
       ]
     },
     {
       "Route": "_framework/LibaryManagementSystem.wasm",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-okw9xrmm02.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-z5d301897f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000162548765"
+          "Quality": "0.000144425188"
         }
       ],
       "ResponseHeaders": [
@@ -10568,15 +10568,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6151"
+          "Value": "6923"
         },
         {
           "Name": "ETag",
-          "Value": "\"drdaSojOSaCicgb1HGIkivXXanhtTXU7Ux1QohaHdb8=\""
+          "Value": "\"H/gDIorqCi/9eM1QII3s+ogTRfdC0RwlDYYJ1FfuxYc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:27:28 GMT"
+          "Value": "Sun, 19 Jan 2025 17:17:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10596,19 +10596,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"2AVPZwOSeaz1PKg7GHYb4CiSPhgrwONIDW8xuTlO6bM=\""
+          "Value": "W/\"mTa3ZXANPG263YBaQZPbDsQt/BOSFWgRxTP4DKRXfmU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2AVPZwOSeaz1PKg7GHYb4CiSPhgrwONIDW8xuTlO6bM="
+          "Value": "sha256-mTa3ZXANPG263YBaQZPbDsQt/BOSFWgRxTP4DKRXfmU="
         }
       ]
     },
     {
       "Route": "_framework/LibaryManagementSystem.wasm.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-okw9xrmm02.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-z5d301897f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10617,7 +10617,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6151"
+          "Value": "6923"
         },
         {
           "Name": "Content-Type",
@@ -10625,11 +10625,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"drdaSojOSaCicgb1HGIkivXXanhtTXU7Ux1QohaHdb8=\""
+          "Value": "\"H/gDIorqCi/9eM1QII3s+ogTRfdC0RwlDYYJ1FfuxYc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:27:28 GMT"
+          "Value": "Sun, 19 Jan 2025 17:17:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10647,7 +10647,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-drdaSojOSaCicgb1HGIkivXXanhtTXU7Ux1QohaHdb8="
+          "Value": "sha256-H/gDIorqCi/9eM1QII3s+ogTRfdC0RwlDYYJ1FfuxYc="
         }
       ]
     },
@@ -37065,8 +37065,8 @@
       ]
     },
     {
-      "Route": "css/LibrarianLogin.css",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/LibrarianLogin.css",
+      "Route": "css/Login.css",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/Login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -37075,7 +37075,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2108"
+          "Value": "2109"
         },
         {
           "Name": "Content-Type",
@@ -37083,11 +37083,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xPOkxp1XeZIEMxOSLcZLg3X64e7EkXr/PmHOG9gWlHc=\""
+          "Value": "\"3Xc8ymwUSqD7m/i4GwFvkOpaY3EFxLuFrHQhnfVIrQA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:28:39 GMT"
+          "Value": "Sun, 19 Jan 2025 16:32:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -37097,13 +37097,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xPOkxp1XeZIEMxOSLcZLg3X64e7EkXr/PmHOG9gWlHc="
+          "Value": "sha256-3Xc8ymwUSqD7m/i4GwFvkOpaY3EFxLuFrHQhnfVIrQA="
         }
       ]
     },
     {
-      "Route": "css/LibrarianLogin.kgnsegwmkc.css",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/LibrarianLogin.css",
+      "Route": "css/Login.v98ttj58kv.css",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/Login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -37112,7 +37112,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2108"
+          "Value": "2109"
         },
         {
           "Name": "Content-Type",
@@ -37120,11 +37120,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xPOkxp1XeZIEMxOSLcZLg3X64e7EkXr/PmHOG9gWlHc=\""
+          "Value": "\"3Xc8ymwUSqD7m/i4GwFvkOpaY3EFxLuFrHQhnfVIrQA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 19 Jan 2025 16:28:39 GMT"
+          "Value": "Sun, 19 Jan 2025 16:32:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -37134,15 +37134,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kgnsegwmkc"
+          "Value": "v98ttj58kv"
         },
         {
           "Name": "label",
-          "Value": "css/LibrarianLogin.css"
+          "Value": "css/Login.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xPOkxp1XeZIEMxOSLcZLg3X64e7EkXr/PmHOG9gWlHc="
+          "Value": "sha256-3Xc8ymwUSqD7m/i4GwFvkOpaY3EFxLuFrHQhnfVIrQA="
         }
       ]
     },

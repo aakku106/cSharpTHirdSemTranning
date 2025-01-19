@@ -27,16 +27,20 @@
     <h2>Login</h2>
     <form action="">
         <div class="input-field">
-            <input type="text" name="username" id="username" placeholder="Enter Your Username">
+            <input type="text" name="username" id="username" placeholder="Enter Your Username" @bind="username">
             <div class="underline"></div>
         </div>
         <div class="input-field">
-            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            <input type="password" name="password" id="password" placeholder="Enter Your Password" @bind="password">
             <div class="underline"></div>
         </div>
 
-        <input type="submit" value="Continue">
+        <input type="submit" value="Continue" @onclick="HandleLogin">
     </form>
-
-
 </main>
+@code {
+    private string username = string.Empty;
+    private string password = string.Empty;
+    private bool loginFailed = false;
+    private void HandleLogin() { }
+}
