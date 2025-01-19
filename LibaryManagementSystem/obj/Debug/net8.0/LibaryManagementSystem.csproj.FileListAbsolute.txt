@@ -1,10 +1,3 @@
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.csproj.AssemblyReference.cache
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.AssemblyInfoInputs.cache
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.AssemblyInfo.cs
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.csproj.CoreCompileInputs.cache
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.MvcApplicationPartsAssemblyInfo.cache
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.sourcelink.json
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/dotnet.js
@@ -620,6 +613,13 @@
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/icudt_EFIGS.dat
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/icudt_no_CJK.dat
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/emcc-props.json
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.csproj.AssemblyReference.cache
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.AssemblyInfoInputs.cache
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.AssemblyInfo.cs
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.csproj.CoreCompileInputs.cache
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.MvcApplicationPartsAssemblyInfo.cache
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.sourcelink.json
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/webcil/Microsoft.AspNetCore.Authorization.wasm
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/webcil/Microsoft.AspNetCore.Components.wasm
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/webcil/Microsoft.AspNetCore.Components.Forms.wasm
@@ -1017,9 +1017,6 @@
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/1d1lq9o41e-tptq2av103.gz
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/enmnkeqxa5-lfu7j35m59.gz
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/ax4z175kqa-oyz0vx2fzb.gz
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-aa2iw9gqfq.gz
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-dmrmfqjzy4.gz
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-083k91taec.gz
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/staticwebassets.build.json
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/staticwebassets.development.json
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/staticwebassets.build.endpoints.json
@@ -1034,3 +1031,6 @@
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/refint/LibaryManagementSystem.dll
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.pdb
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/ref/LibaryManagementSystem.dll
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-okw9xrmm02.gz
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-2kvvdshpxt.gz
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-7d9rsx7sti.gz

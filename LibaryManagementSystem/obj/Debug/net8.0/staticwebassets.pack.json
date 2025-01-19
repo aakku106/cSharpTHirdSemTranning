@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
     },
     {
+      "Id": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/assets/library.png",
+      "PackagePath": "staticwebassets/assets/library.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/assets/student.png",
+      "PackagePath": "staticwebassets/assets/student.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/LibrarianLogin.css",
+      "PackagePath": "staticwebassets/css/LibrarianLogin.css"
+    },
+    {
       "Id": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },
