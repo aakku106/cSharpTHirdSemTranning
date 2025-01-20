@@ -69,6 +69,7 @@
             border-radius: 10px;
             padding: 12px;
             transition: all .3s ease-in-out;
+            user-select: none !important;
 
             &:hover {
                 cursor: pointer;
@@ -94,13 +95,21 @@
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        margin-top: 50px !important;
     }
 
 
 
     input {
-        height: 37px;
-        width: 800px;
+        width: 32.7vw;
+        height: 5vh;
+        box-shadow: 0px 0px 5px;
+        border-radius: 7px;
+
+        &:hover {
+            background-color: transparent;
+            color: #14ff03;
+        }
     }
 
     .returnTOHomeMainPage {
@@ -154,6 +163,8 @@
 
     th {
         background-color: #0d0d0da7;
+        user-select: none !important;
+
     }
 
     td,
@@ -199,11 +210,17 @@
                 <div class="act close" @onclick:stopPropagation @onclick="close"></div>
                 <div class="addBookWrapper">
                     @librarian.LibrarianId <span>fill up the following data</span>
-                    <input type="text" name="" id="" placeholder="Enter the books ID" @bind="BookId">
-                    <input type="text" name="" id="" placeholder="Enter the books NAME" @bind="BookName">
-                    <input type="text" name="" id="" placeholder="Enter the books Author name" @bind="BookAuthor">
-                    <input type="text" name="" id="" placeholder="Enter the Release data org book" @bind="BookReleaseDate">
-                    <input type="text" name="" id="" placeholder="HowManyBooks will you add ?" @bind="HowManyBooks">
+                    @if (didErrorGenerated)
+                    {
+                        <span style="color: white; background-color: red; border-radius: 10px; padding: 12px; text-align: center;">
+                            @errorMessage
+                        </span>
+                    }
+                    <input type="text" placeholder="Enter the books ID" @bind="BookId">
+                    <input type="text" placeholder="Enter the books NAME" @bind="BookName">
+                    <input type="text" placeholder="Enter the books Author name" @bind="BookAuthor">
+                    <input type="text" placeholder="Enter the Release data org book" @bind="BookReleaseDate">
+                    <input type="number" placeholder="HowManyBooks will you add ?" @bind="HowManyBooks">
                     <input type="submit" @onclick="AddBookToDB" value="ADD DATA" class="">
                 </div>
             </div>
@@ -294,6 +311,8 @@ else
     private string BookAuthor = string.Empty;
     private string BookReleaseDate = string.Empty;
     private int HowManyBooks;
+    private string errorMessage = string.Empty;
+    private bool didErrorGenerated = false;
 
     private void addBook()
     {
@@ -303,17 +322,32 @@ else
     }
     private void AddBookToDB()
     {
-        bookList.book.Add(
-        new Books()
-            {
-                BookId = BookId,
-                BookName = BookName,
-                BookAuthor = BookAuthor,
-                BookReleaseDate = BookReleaseDate,
-                HowManyBooks = HowManyBooks
-            }
-        );
-        clear();
+        @if (HowManyBooks > 0)
+        {
+            didErrorGenerated = true;
+            errorMessage = "You cannot add less than 1 book in the Library";
+            @* return; *@
+        }
+        else if (BookId != "" && BookName != "" && BookAuthor != "" && BookReleaseDate != "" && HowManyBooks > 0)
+        {
+            bookList.book.Add(
+            new Books()
+                {
+                    BookId = BookId,
+                    BookName = BookName,
+                    BookAuthor = BookAuthor,
+                    BookReleaseDate = BookReleaseDate,
+                    HowManyBooks = HowManyBooks
+                }
+            );
+            clear();
+
+        }
+        else
+        {
+            didErrorGenerated = true;
+            errorMessage = "Fill ALL the details to add book in Library ";
+        }
     }
     private void removeBook()
     {
@@ -347,6 +381,8 @@ else
         BookReleaseDate = string.Empty;
         BookAuthor = string.Empty;
         HowManyBooks = 1;
+        errorMessage = string.Empty;
+        didErrorGenerated = false;
     }
     private void close()
     {
@@ -356,6 +392,8 @@ else
         isSearchBookClicked = false;
         isRemovedBookClicked = false;
         isStyleSelected = "dashboardHolder";
+        errorMessage = string.Empty;
+        didErrorGenerated = false;
         StateHasChanged();
     }
 }
