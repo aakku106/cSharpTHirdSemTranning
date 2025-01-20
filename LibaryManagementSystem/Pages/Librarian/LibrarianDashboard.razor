@@ -1,5 +1,8 @@
 @page "/LibrarianDashboard"
 
+@using LibaryManagementSystem.Services
+@inject Librarian librarian
+
 <head>
     <title>Librarian Dashboard</title>
 </head>
@@ -8,10 +11,99 @@
     body {
         background-color: black;
         color: white;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+
+        h1 {
+            text-align: center;
+            position: fixed;
+            top: 2%;
+            left: 40%;
+            margin: 2vw;
+            z-index: 1 !important;
+        }
+
+        h3 {
+            text-align: center;
+            position: fixed;
+            top: 7%;
+            left: 40%;
+            margin: 2vw;
+            z-index: 1 !important;
+
+        }
+
+        .dashboardHolder {
+            top: 1%;
+            left: 10%;
+            position: absolute;
+            margin-top: 10% !important;
+            height: 40vw;
+            background-color: rgba(255, 0, 251, 0.131);
+            padding: 5vw;
+            border-radius: 3vw;
+            width: 70%;
+            z-index: 10 !important;
+        }
+
+        li {
+            margin: 2vw;
+            position: relative;
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .returnTOHomeMainPage {
+        text-align: center;
+        z-index: 1000 !important;
     }
 </style>
 
+@if (librarian.canLogin)
+{
 
-<body>
+    <body>
     <h1>Librarian Dashboard</h1>
+    <br>
+    <h3>welcome @librarian.LibrarianId</h3>
+    <ul type="circle" class="dashboardHolder">
+        <li>ADD book</li>
+        <li>Remove book</li>
+        <li>Search book</li>
+        <li>View Students</li>
+        <li>Edit Students Details</li>
+        <li style="color: red;">Remove Students</li>
+
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+}
+else
+{
+    <h1 class="returnTOHomeMainPage"> <a href="/LibrarianLogin">Return to Login Page</a> </h1>
+
+}

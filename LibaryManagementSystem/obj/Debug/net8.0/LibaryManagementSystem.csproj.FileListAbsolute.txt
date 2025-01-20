@@ -1017,9 +1017,6 @@
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/1d1lq9o41e-tptq2av103.gz
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/enmnkeqxa5-lfu7j35m59.gz
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/ax4z175kqa-oyz0vx2fzb.gz
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-qj06wd55qa.gz
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-473xzq3w05.gz
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-6o9lnlpwij.gz
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/staticwebassets.build.json
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/staticwebassets.development.json
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/staticwebassets.build.endpoints.json
@@ -1034,3 +1031,6 @@
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/refint/LibaryManagementSystem.dll
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.pdb
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/ref/LibaryManagementSystem.dll
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-w2ybatrm79.gz
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-9tg7u3pz2i.gz
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-b8f6nu4q41.gz

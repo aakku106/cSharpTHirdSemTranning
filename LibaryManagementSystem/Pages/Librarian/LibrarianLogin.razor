@@ -49,17 +49,19 @@
     private string username = string.Empty;
     private string password = string.Empty;
     private bool loginFailed = false;
-    @* string test = librarian.LibrarianId; *@
     private void HandleLogin()
     {
         if (username == librarian.LibrarianId && password == librarian.LibrarianPassword)
         {
             loginFailed = false;
+            librarian.canLogin = true;
             Navigation.NavigateTo("/LibrarianDashboard");
         }
         else
         {
             loginFailed = true;
+            librarian.canLogin = false;
+
         }
     }
 }
