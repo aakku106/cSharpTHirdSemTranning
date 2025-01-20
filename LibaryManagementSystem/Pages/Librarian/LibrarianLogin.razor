@@ -1,5 +1,9 @@
 @page "/LibrarianLogin"
 
+@using LibaryManagementSystem.Services
+@inject NavigationManager Navigation
+
+
 <head>
     <title>LibrarianLogin</title>
     <link rel="stylesheet" href="css/Login.css">
@@ -42,5 +46,17 @@
     private string username = string.Empty;
     private string password = string.Empty;
     private bool loginFailed = false;
-    private void HandleLogin() { }
+    private List<LibaryManagementSystem.Services.Librarian> Librarian = new
+    List<LibaryManagementSystem.Services.Librarian>();
+    private void HandleLogin()
+    {
+        @* if(username!=Services.Librarian) *@
+        var user = Services.Librarian.users.Where(y => y.LibrarianId == username && y.LibrarianPassword ==
+        password);
+        if (user != null)
+        {
+            Navigation.NavigateTo("/LibrarianDashboard");
+        }
+
+    }
 }
