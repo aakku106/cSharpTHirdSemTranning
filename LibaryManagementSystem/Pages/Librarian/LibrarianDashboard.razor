@@ -2,6 +2,9 @@
 
 @using LibaryManagementSystem.Services
 @inject Librarian librarian
+@using LibaryManagementSystem.Data
+@inject BookList bookList
+@inject StudentList studentList
 
 <head>
     <title>Librarian Dashboard</title>
@@ -58,12 +61,6 @@
             z-index: 10 !important;
             display: flex;
             transition: all .5s ease-in-out;
-
-            .isSelected {
-                background-color: rgba(90, 221, 24, 0.131);
-                color: lavenderblush;
-            }
-
         }
 
         li {
@@ -98,10 +95,75 @@
         text-align: center;
         z-index: 1000 !important;
     }
+
+
+    .HomeBack {
+        text-decoration: none;
+        color: white;
+        margin: 1.5vw;
+        padding: 2vw;
+        border-radius: 50%;
+        position: fixed;
+    }
+
+    .close {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: red;
+        z-index: 100000;
+    }
+
+    .popup {
+        z-index: 100000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 0px 60px rgba(10, 10, 10, 0.396);
+        padding: 20px;
+        border-radius: 10px;
+        background-color: transparent;
+        backdrop-filter: blur(2.6px);
+        background: linear-gradient(120deg, #b32c408d, #0fa54452) !important;
+        background-size: 100px;
+        color: white;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    table {
+        margin-top: 4%;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th {
+        background-color: #0d0d0da7;
+    }
+
+    td,
+    th {
+        border: 1px solid #000000;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #e1e34421;
+    }
 </style>
 
 @if (librarian.canLogin)
 {
+    <a href="/" class="HomeBack">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-house-door-fill"
+        viewBox="0 0 16 16">
+        <path
+            d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+    </svg>
+</a>
 
     <body>
     <h1>Librarian Dashboard</h1>
@@ -117,8 +179,71 @@
             <li class="RemoveStd">Remove Students</li>
         </ul>
     </div>
-    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
-</body>
+
+    @if (isAddBookClicked)
+        {
+            <div class="popup">
+                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="addBookWrapper">
+
+                </div>
+
+            </div>
+
+        }@if (isRemovedBookClicked)
+        {
+            <div class="popup">
+                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+
+            </div>
+        }
+        @if (isSearchBookClicked)
+        {
+            <div class="popup">
+                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+
+            </div>
+        } @if (isViewStudentsClicked)
+        {
+            <div class="popup">
+                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="viewStudentWrapper">
+                    <table>
+                        <tr>
+                            <th>Student Id</th>
+                            <th>Student Name</th>
+                            <th>Class</th>
+                            <th>Address</th>
+                        </tr>
+                        @foreach (var i in studentList.student)
+                        {
+                            <tr>
+                                <td>@i.Id</td>
+                                <td>@i.Name</td>
+                                <td>@i.Class</td>
+                                <td>@i.Address</td>
+                            </tr>
+
+                        }
+                    </table>
+                </div>
+
+            </div>
+        } @if (isEditStudentsDetailsClicked)
+        {
+            <div class="popup">
+                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+
+            </div>
+        }
+
+
+
+
+
+
+        <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+    </body>
 }
 else
 {
@@ -127,15 +252,23 @@ else
 
 @code {
     private string isStyleSelected = "dashboardHolder";
+    private bool isAddBookClicked = false;
+    private bool isRemovedBookClicked = false;
+    private bool isSearchBookClicked = false;
+    private bool isViewStudentsClicked = false;
+    private bool isEditStudentsDetailsClicked = false;
+    private bool isRemoveStudentClicked = false;
 
     private void addBook()
     {
         librarian.canLogin = true;
+        isAddBookClicked = true;
         isStyleSelected = "dashboardHolderSelected";
     }
     private void removeBook()
     {
         librarian.canLogin = true;
+        isRemovedBookClicked = true;
         isStyleSelected = "dashboardHolderSelected";
 
 
@@ -144,12 +277,14 @@ else
     {
         librarian.canLogin = true;
         isStyleSelected = "dashboardHolderSelected";
+        isSearchBookClicked = true;
 
 
     }
     private void viewStudents()
     {
         librarian.canLogin = true;
+        isViewStudentsClicked = true;
         isStyleSelected = "dashboardHolderSelected";
 
 
@@ -158,10 +293,22 @@ else
     private void editStudentsDetails()
     {
         librarian.canLogin = true;
+        isEditStudentsDetailsClicked = true;
         isStyleSelected = "dashboardHolderSelected";
 
 
     }
+    private void close()
+    {
+        isAddBookClicked = false;
+        isEditStudentsDetailsClicked = false;
+        isViewStudentsClicked = false;
+        isSearchBookClicked = false;
+        isRemovedBookClicked = false;
+        isStyleSelected = "dashboardHolder";
+        StateHasChanged();
+    }
+
 
 
 }
