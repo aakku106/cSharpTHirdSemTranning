@@ -2,14 +2,11 @@ namespace LibaryManagementSystem.Services
 {
     public class Librarian
     {
-        public string LibrarianId = "user";
-        public string LibrarianPassword = "@123";
-        public static List<Librarian> users = new List<Librarian>()
-        {
-            new Librarian()
-            {
-                LibrarianId = "admin",
-                LibrarianPassword = "@123",
-            }};
+        public string? LibrarianId { get; set; } = "admin";
+        public string? LibrarianPassword { get; set; } = "@!@#";
+
+        // public Librarian() { }
+
+
     }
 }

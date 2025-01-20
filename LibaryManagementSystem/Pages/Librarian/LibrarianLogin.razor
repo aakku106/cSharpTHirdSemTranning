@@ -1,7 +1,10 @@
 @page "/LibrarianLogin"
 
-@using LibaryManagementSystem.Services
+@* @using LibaryManagementSystem.Services *@
 @inject NavigationManager Navigation
+@* @inject LibaryManagementSystem.Services.Librarian librarian *@
+@using LibaryManagementSystem.Services
+@inject Librarian librarian
 
 
 <head>
@@ -26,7 +29,8 @@
 
 <a href="/">BACK</a>
 
-<h1>Librarian Login Page</h1>
+<h1>Librarian Login Page
+</h1>
 <main class="container">
     <h2>Login</h2>
     <form action="">
@@ -38,7 +42,6 @@
             <input type="password" name="password" id="password" placeholder="Enter Your Password" @bind="password">
             <div class="underline"></div>
         </div>
-
         <input type="submit" value="Continue" @onclick="HandleLogin">
     </form>
 </main>
@@ -46,17 +49,17 @@
     private string username = string.Empty;
     private string password = string.Empty;
     private bool loginFailed = false;
-    private List<LibaryManagementSystem.Services.Librarian> Librarian = new
-    List<LibaryManagementSystem.Services.Librarian>();
+    @* string test = librarian.LibrarianId; *@
     private void HandleLogin()
     {
-        @* if(username!=Services.Librarian) *@
-        var user = Services.Librarian.users.Where(y => y.LibrarianId == username && y.LibrarianPassword ==
-        password);
-        if (user != null)
+        if (username == librarian.LibrarianId && password == librarian.LibrarianPassword)
         {
+            loginFailed = false;
             Navigation.NavigateTo("/LibrarianDashboard");
         }
-
+        else
+        {
+            loginFailed = true;
+        }
     }
 }

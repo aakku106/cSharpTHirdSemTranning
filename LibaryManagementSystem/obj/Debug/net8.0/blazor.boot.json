@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "LibaryManagementSystem",
   "resources": {
-    "hash": "sha256-gSgTPh0S9GsNG4rm8Kw0UWgoxAq0zgkytvDlrsiEYeY=",
+    "hash": "sha256-HMgWUJTSGGPF7ZTvkSWo0nHT7h6uA8/UwjA6xXNeCuU=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-04e4k5XU8HWGB/dq/2+j84xzzGPflTs0IYWI0OxogVc=",
       "netstandard.wasm": "sha256-gnGZURPnoSmjXuYNCOJi5tt8qn2LRImWgue1Ru3/TDQ=",
       "System.Private.CoreLib.wasm": "sha256-6w3jYr0arcp8jnt4aeqh+AmqrLA6q7jl9rQYAwLzE0M=",
-      "LibaryManagementSystem.wasm": "sha256-Ip7oOs8inj1EAEQXVp/PKLYhld7iqfZxG/ViDZI1DwE="
+      "LibaryManagementSystem.wasm": "sha256-urMImASS98ypT9FJe1DnVdGxkM3pvkBx2lMjilXodgw="
     },
     "pdb": {
-      "LibaryManagementSystem.pdb": "sha256-HFvUp4bikthM9HfyEuXReRhjaPmJwS0Fjf6gehTd2QA="
+      "LibaryManagementSystem.pdb": "sha256-cGnGLn2nMo9pnfU3vVk9hnAAkB6Tp+hf6xW7ngXLurc="
     }
   },
   "cacheBootResources": true,
