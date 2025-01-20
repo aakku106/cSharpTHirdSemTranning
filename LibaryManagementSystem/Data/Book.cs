@@ -5,7 +5,7 @@ namespace LibaryManagementSystem.Data
     public class BookList()
     {
 
-        public List<Books> student = new List<Books>(){
+        public List<Books> book = new List<Books>(){
             new Books(){
                 BookId="106",
                 BookName="Master",

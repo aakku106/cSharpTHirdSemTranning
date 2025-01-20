@@ -185,9 +185,7 @@
             <div class="popup">
                 <div class="act close" @onclick:stopPropagation @onclick="close"></div>
                 <div class="addBookWrapper">
-
                 </div>
-
             </div>
 
         }@if (isRemovedBookClicked)
@@ -201,6 +199,27 @@
         {
             <div class="popup">
                 <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="searchBookWrapper">
+                    <table>
+                        <tr>
+                            <th>BookId</th>
+                            <th>BookName</th>
+                            <th>BookAuthor</th>
+                            <th>BookReleaseDate</th>
+                            <th>HowManyBooks</th>
+                        </tr>
+                        @foreach (var i in bookList.book)
+                        {
+                            <tr>
+                                <td>@i.BookId</td>
+                                <td>@i.BookName</td>
+                                <td>@i.BookAuthor</td>
+                                <td>@i.BookReleaseDate</td>
+                                <td>@i.HowManyBooks</td>
+                            </tr>
+                        }
+                    </table>
+                </div>
 
             </div>
         } @if (isViewStudentsClicked)
@@ -223,7 +242,6 @@
                                 <td>@i.Class</td>
                                 <td>@i.Address</td>
                             </tr>
-
                         }
                     </table>
                 </div>
@@ -236,12 +254,6 @@
 
             </div>
         }
-
-
-
-
-
-
         <script src="/_framework/aspnetcore-browser-refresh.js"></script>
     </body>
 }
