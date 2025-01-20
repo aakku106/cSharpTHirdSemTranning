@@ -8,7 +8,7 @@ namespace LibaryManagementSystem.Services
         public string? BookName { get; set; }
         public string? BookAuthor { get; set; }
         public string? BookReleaseDate { get; set; }
-        public int HowManyBooks { get; set; } = 1;
+        public int HowManyBooks { get; set; }
 
     }
 
