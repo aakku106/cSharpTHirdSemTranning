@@ -1031,6 +1031,6 @@
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/refint/LibaryManagementSystem.dll
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/LibaryManagementSystem.pdb
 /Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/ref/LibaryManagementSystem.dll
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-w2ybatrm79.gz
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-9tg7u3pz2i.gz
-/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-b8f6nu4q41.gz
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-901syrih46.gz
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-7pgr4k91mf.gz
+/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-bd2nv21an7.gz

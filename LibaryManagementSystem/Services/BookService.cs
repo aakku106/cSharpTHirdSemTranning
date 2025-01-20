@@ -1,13 +1,14 @@
 namespace LibaryManagementSystem.Services
 {
 
-    public class Students
+
+    public class Books
     {
-        public string? Id { get; set; }
-        public string? Password { get; set; }
-        public string? Name { get; set; }
-        public int? Class { get; set; }
-        public string? Address { get; set; }
+        public string? BookId { get; set; }
+        public string? BookName { get; set; }
+        public string? BookAuthor { get; set; }
+        public string? BookReleaseDate { get; set; }
+        public int HowManyBooks { get; set; } = 1;
 
     }
 
