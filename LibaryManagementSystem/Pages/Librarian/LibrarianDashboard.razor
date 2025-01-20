@@ -1,8 +1,8 @@
 @page "/LibrarianDashboard"
 
 @using LibaryManagementSystem.Services
-@inject Librarian librarian
 @using LibaryManagementSystem.Data
+@inject Librarian librarian
 @inject BookList bookList
 @inject StudentList studentList
 
@@ -152,6 +152,16 @@
         width: 90vw;
         height: 90vh;
     }
+    .error-toast {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
 
 
     table {
@@ -212,16 +222,19 @@
                     @librarian.LibrarianId <span>fill up the following data</span>
                     @if (didErrorGenerated)
                     {
-                        <span style="color: white; background-color: red; border-radius: 10px; padding: 12px; text-align: center;">
-                            @errorMessage
-                        </span>
+                        @if (didErrorGenerated)
+{
+    <span class="error-toast">
+        @errorMessage
+    </span>
+}
                     }
                     <input type="text" placeholder="Enter the books ID" @bind="BookId">
                     <input type="text" placeholder="Enter the books NAME" @bind="BookName">
                     <input type="text" placeholder="Enter the books Author name" @bind="BookAuthor">
                     <input type="text" placeholder="Enter the Release data org book" @bind="BookReleaseDate">
-                    <input type="number" placeholder="HowManyBooks will you add ?" @bind="HowManyBooks">
-                    <input type="submit" @onclick="AddBookToDB" value="ADD DATA" class="">
+                    <input type="number" min="1" placeholder="HowManyBooks will you add ?" @bind="HowManyBooks">
+                    <input type="submit" @onclick="AddBookToDB" value="ADD DATA">
                 </div>
             </div>
 
@@ -322,13 +335,8 @@ else
     }
     private void AddBookToDB()
     {
-        @if (HowManyBooks > 0)
-        {
-            didErrorGenerated = true;
-            errorMessage = "You cannot add less than 1 book in the Library";
-            @* return; *@
-        }
-        else if (BookId != "" && BookName != "" && BookAuthor != "" && BookReleaseDate != "" && HowManyBooks > 0)
+
+        if (BookId != "" && BookName != "" && BookAuthor != "" && BookReleaseDate != "" && HowManyBooks > 0)
         {
             bookList.book.Add(
             new Books()
@@ -341,13 +349,16 @@ else
                 }
             );
             clear();
-
+            return;
         }
-        else
+        else if (HowManyBooks <= 0)
         {
             didErrorGenerated = true;
-            errorMessage = "Fill ALL the details to add book in Library ";
+            errorMessage = "You cannot add less than 1 book in the Library";
+            return;
         }
+        didErrorGenerated = true;
+        errorMessage = "Please fill in all fields correctly.";
     }
     private void removeBook()
     {
@@ -375,7 +386,6 @@ else
     }
     private void clear()
     {
-        isStyleSelected = "dashboardHolderSelected";
         BookId = string.Empty;
         BookName = string.Empty;
         BookReleaseDate = string.Empty;
@@ -392,8 +402,7 @@ else
         isSearchBookClicked = false;
         isRemovedBookClicked = false;
         isStyleSelected = "dashboardHolder";
-        errorMessage = string.Empty;
-        didErrorGenerated = false;
+        clear();
         StateHasChanged();
     }
 }
