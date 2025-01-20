@@ -39,7 +39,6 @@
             left: 10%;
             position: absolute;
             margin-top: 10% !important;
-            height: 40vw;
             background-color: rgba(255, 0, 251, 0.131);
             padding: 5vw;
             border-radius: 3vw;
@@ -47,11 +46,49 @@
             z-index: 10 !important;
         }
 
+        .dashboardHolderSelected {
+            top: 1%;
+            left: 10%;
+            position: absolute;
+            margin-top: 10% !important;
+            background-color: rgba(255, 0, 251, 0.131);
+            padding: 5vw;
+            border-radius: 3vw;
+            width: 70%;
+            z-index: 10 !important;
+            display: flex;
+            transition: all .5s ease-in-out;
+
+            .isSelected {
+                background-color: rgba(90, 221, 24, 0.131);
+                color: lavenderblush;
+            }
+
+        }
+
         li {
             margin: 2vw;
             position: relative;
-            &:hover{
+            text-align: left;
+            border-radius: 10px;
+            padding: 12px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
                 cursor: pointer;
+                background-color: #3651d42e;
+                text-align: center;
+                color: rgba(101, 223, 93, 0.949);
+            }
+
+        }
+
+        .RemoveStd {
+            color: red;
+
+            &:hover {
+                background-color: #ff00002e;
+                color: fuchsia;
             }
 
         }
@@ -70,40 +107,61 @@
     <h1>Librarian Dashboard</h1>
     <br>
     <h3>welcome @librarian.LibrarianId</h3>
-    <ul type="circle" class="dashboardHolder">
-        <li>ADD book</li>
-        <li>Remove book</li>
-        <li>Search book</li>
-        <li>View Students</li>
-        <li>Edit Students Details</li>
-        <li style="color: red;">Remove Students</li>
-
-    </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="wrapper">
+        <ul type="circle" class="@isStyleSelected">
+            <li @onclick="addBook" class="addBook">Add book</li>
+            <li @onclick="removeBook" class="removeBook ">Remove book</li>
+            <li @onclick="searchBook" class="searchBook ">Search book</li>
+            <li @onclick="viewStudents" class="viewStudents ">View Students</li>
+            <li @onclick="editStudentsDetails" class="editStudentsDetails ">Edit Students Details</li>
+            <li class="RemoveStd">Remove Students</li>
+        </ul>
+    </div>
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
 </body>
 }
 else
 {
     <h1 class="returnTOHomeMainPage"> <a href="/LibrarianLogin">Return to Login Page</a> </h1>
+}
+
+@code {
+    private string isStyleSelected = "dashboardHolder";
+
+    private void addBook()
+    {
+        librarian.canLogin = true;
+        isStyleSelected = "dashboardHolderSelected";
+    }
+    private void removeBook()
+    {
+        librarian.canLogin = true;
+        isStyleSelected = "dashboardHolderSelected";
+
+
+    }
+    private void searchBook()
+    {
+        librarian.canLogin = true;
+        isStyleSelected = "dashboardHolderSelected";
+
+
+    }
+    private void viewStudents()
+    {
+        librarian.canLogin = true;
+        isStyleSelected = "dashboardHolderSelected";
+
+
+
+    }
+    private void editStudentsDetails()
+    {
+        librarian.canLogin = true;
+        isStyleSelected = "dashboardHolderSelected";
+
+
+    }
+
 
 }
