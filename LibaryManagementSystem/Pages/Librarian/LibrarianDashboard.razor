@@ -34,7 +34,6 @@
             left: 40%;
             margin: 2vw;
             z-index: 1 !important;
-
         }
 
         .dashboardHolder {
@@ -77,7 +76,6 @@
                 text-align: center;
                 color: rgba(101, 223, 93, 0.949);
             }
-
         }
 
         .RemoveStd {
@@ -89,6 +87,20 @@
             }
 
         }
+    }
+
+    .addBookWrapper {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+
+    input {
+        height: 37px;
+        width: 800px;
     }
 
     .returnTOHomeMainPage {
@@ -131,6 +143,7 @@
         width: 90vw;
         height: 90vh;
     }
+
 
     table {
         margin-top: 4%;
@@ -185,6 +198,13 @@
             <div class="popup">
                 <div class="act close" @onclick:stopPropagation @onclick="close"></div>
                 <div class="addBookWrapper">
+                    @librarian.LibrarianId <span>fill up the following data</span>
+                    <input type="text" name="" id="" placeholder="Enter the books ID" @bind="BookId">
+                    <input type="text" name="" id="" placeholder="Enter the books NAME" @bind="BookName">
+                    <input type="text" name="" id="" placeholder="Enter the books Author name" @bind="BookAuthor">
+                    <input type="text" name="" id="" placeholder="Enter the Release data org book" @bind="BookReleaseDate">
+                    <input type="text" name="" id="" placeholder="HowManyBooks will you add ?" @bind="HowManyBooks">
+                    <input type="submit" @onclick="AddBookToDB" value="ADD DATA" class="">
                 </div>
             </div>
 
@@ -220,7 +240,6 @@
                         }
                     </table>
                 </div>
-
             </div>
         } @if (isViewStudentsClicked)
         {
@@ -270,6 +289,11 @@ else
     private bool isViewStudentsClicked = false;
     private bool isEditStudentsDetailsClicked = false;
     private bool isRemoveStudentClicked = false;
+    private string BookId = string.Empty;
+    private string BookName = string.Empty;
+    private string BookAuthor = string.Empty;
+    private string BookReleaseDate = string.Empty;
+    private int HowManyBooks;
 
     private void addBook()
     {
@@ -277,38 +301,52 @@ else
         isAddBookClicked = true;
         isStyleSelected = "dashboardHolderSelected";
     }
+    private void AddBookToDB()
+    {
+        bookList.book.Add(
+        new Books()
+            {
+                BookId = BookId,
+                BookName = BookName,
+                BookAuthor = BookAuthor,
+                BookReleaseDate = BookReleaseDate,
+                HowManyBooks = HowManyBooks
+            }
+        );
+        clear();
+    }
     private void removeBook()
     {
         librarian.canLogin = true;
         isRemovedBookClicked = true;
         isStyleSelected = "dashboardHolderSelected";
-
-
     }
     private void searchBook()
     {
         librarian.canLogin = true;
         isStyleSelected = "dashboardHolderSelected";
         isSearchBookClicked = true;
-
-
     }
     private void viewStudents()
     {
         librarian.canLogin = true;
         isViewStudentsClicked = true;
         isStyleSelected = "dashboardHolderSelected";
-
-
-
     }
     private void editStudentsDetails()
     {
         librarian.canLogin = true;
         isEditStudentsDetailsClicked = true;
         isStyleSelected = "dashboardHolderSelected";
-
-
+    }
+    private void clear()
+    {
+        isStyleSelected = "dashboardHolderSelected";
+        BookId = string.Empty;
+        BookName = string.Empty;
+        BookReleaseDate = string.Empty;
+        BookAuthor = string.Empty;
+        HowManyBooks = 1;
     }
     private void close()
     {
@@ -320,7 +358,4 @@ else
         isStyleSelected = "dashboardHolder";
         StateHasChanged();
     }
-
-
-
 }
