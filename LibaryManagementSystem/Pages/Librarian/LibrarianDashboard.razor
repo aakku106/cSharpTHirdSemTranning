@@ -309,7 +309,7 @@
             <div class="popup">
                 <div class="act close" @onclick:stopPropagation @onkeydown="handleKey" @onclick="close"></div>
                 <div class="editStudentDetails">
-                    <input type="text" placeholder="Enter Student's ID to EDIT">
+                    <input type="text" placeholder="Enter Student's ID to EDIT" @bind="studentId">
                     <input type="button" value="GO" style="color: blue;">
                 </div>
             </div>
@@ -434,6 +434,7 @@ else
             return;
         }
         studentList.student.RemoveAll(s => s.Id == studentId);
+        clear();
     }
     private void handleKey(KeyboardEventArgs e)
     {
