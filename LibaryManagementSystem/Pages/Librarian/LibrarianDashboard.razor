@@ -90,13 +90,16 @@
         }
     }
 
-    .addBookWrapper {
+    .addBookWrapper,
+    .removeBookWrapper,
+    .removeStudentWrapper {
         display: flex !important;
         flex-direction: column;
         gap: 10px;
         align-items: center;
         margin-top: 50px !important;
     }
+
 
 
 
@@ -136,7 +139,7 @@
     }
 
     .popup {
-        z-index: 100000;
+        z-index: 100000 !important;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -152,16 +155,17 @@
         width: 90vw;
         height: 90vh;
     }
+
     .error-toast {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: red;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-}
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: red;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    }
 
 
     table {
@@ -210,7 +214,7 @@
             <li @onclick="searchBook" class="searchBook ">Search book</li>
             <li @onclick="viewStudents" class="viewStudents ">View Students</li>
             <li @onclick="editStudentsDetails" class="editStudentsDetails ">Edit Students Details</li>
-            <li class="RemoveStd">Remove Students</li>
+            <li @onclick="removeStudent" class="RemoveStd">Remove Students</li>
         </ul>
     </div>
 
@@ -222,13 +226,11 @@
                     @librarian.LibrarianId <span>fill up the following data</span>
                     @if (didErrorGenerated)
                     {
-                        @if (didErrorGenerated)
-{
-    <span class="error-toast">
-        @errorMessage
-    </span>
-}
+                        <span class="error-toast">
+                            @errorMessage
+                        </span>
                     }
+
                     <input type="text" placeholder="Enter the books ID" @bind="BookId">
                     <input type="text" placeholder="Enter the books NAME" @bind="BookName">
                     <input type="text" placeholder="Enter the books Author name" @bind="BookAuthor">
@@ -242,6 +244,11 @@
         {
             <div class="popup">
                 <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="removeBookWrapper">
+                    <input type="text" placeholder="Enter Book ID to REMOVE" @bind="selectIdTORemove">
+                    @errorMessage
+                    <input type="button" value="REMOVE" @onclick="RemoveBookFromDB">
+                </div>
 
             </div>
         }
@@ -303,6 +310,18 @@
 
             </div>
         }
+
+        @if (isRemoveStudentClicked)
+        {
+            <div class="popup">
+                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="removeStudentWrapper">
+                    <input type="text" placeholder="Enter Student ID" @bind="studentId">
+                    <input type="button" value="REMOVE" style="color: red;" @onclick="RemoveStudentFromDB">
+                </div>
+            </div>
+
+        }
         <script src="/_framework/aspnetcore-browser-refresh.js"></script>
     </body>
 }
@@ -313,23 +332,25 @@ else
 
 @code {
     private string isStyleSelected = "dashboardHolder";
-    private bool isAddBookClicked = false;
-    private bool isRemovedBookClicked = false;
-    private bool isSearchBookClicked = false;
-    private bool isViewStudentsClicked = false;
-    private bool isEditStudentsDetailsClicked = false;
-    private bool isRemoveStudentClicked = false;
-    private string BookId = string.Empty;
-    private string BookName = string.Empty;
-    private string BookAuthor = string.Empty;
-    private string BookReleaseDate = string.Empty;
+    private bool isAddBookClicked = false,
+    isRemovedBookClicked = false,
+    isSearchBookClicked = false,
+    isViewStudentsClicked = false,
+    isEditStudentsDetailsClicked = false,
+    isRemoveStudentClicked = false,
+    didErrorGenerated = false;
+    private string BookId = string.Empty,
+    BookName = string.Empty,
+    BookAuthor = string.Empty,
+    BookReleaseDate = string.Empty,
+    studentId = string.Empty;
     private int HowManyBooks;
-    private string errorMessage = string.Empty;
-    private bool didErrorGenerated = false;
+    private string selectIdTORemove = string.Empty,
+    errorMessage = string.Empty;
 
     private void addBook()
     {
-        librarian.canLogin = true;
+        librarian.canLogin =
         isAddBookClicked = true;
         isStyleSelected = "dashboardHolderSelected";
     }
@@ -362,15 +383,27 @@ else
     }
     private void removeBook()
     {
-        librarian.canLogin = true;
+        librarian.canLogin =
         isRemovedBookClicked = true;
         isStyleSelected = "dashboardHolderSelected";
     }
+    private void RemoveBookFromDB()
+    {
+        if (selectIdTORemove == string.Empty)
+        {
+            didErrorGenerated = true;
+            errorMessage = "Enter Book ID to remove 🌝";
+            return;
+        }
+        bookList.book.RemoveAll(b => b.BookId == selectIdTORemove);
+        clear();
+
+    }
     private void searchBook()
     {
-        librarian.canLogin = true;
-        isStyleSelected = "dashboardHolderSelected";
+        librarian.canLogin =
         isSearchBookClicked = true;
+        isStyleSelected = "dashboardHolderSelected";
     }
     private void viewStudents()
     {
@@ -380,26 +413,44 @@ else
     }
     private void editStudentsDetails()
     {
-        librarian.canLogin = true;
+        librarian.canLogin =
         isEditStudentsDetailsClicked = true;
         isStyleSelected = "dashboardHolderSelected";
     }
+    private void removeStudent()
+    {
+        librarian.canLogin =
+        isRemoveStudentClicked = true;
+    }
+    private void RemoveStudentFromDB()
+    {
+        if (studentId == string.Empty)
+        {
+            didErrorGenerated = true;
+            errorMessage = "Enter Student ID to REMOVE ☯️";
+            return;
+        }
+        studentList.student.RemoveAll(s => s.Id == studentId);
+
+    }
     private void clear()
     {
-        BookId = string.Empty;
-        BookName = string.Empty;
-        BookReleaseDate = string.Empty;
-        BookAuthor = string.Empty;
-        HowManyBooks = 1;
+        BookId =
+        BookName =
+        BookReleaseDate =
+        BookAuthor =
+        selectIdTORemove =
         errorMessage = string.Empty;
         didErrorGenerated = false;
+        HowManyBooks = 1;
     }
     private void close()
     {
-        isAddBookClicked = false;
-        isEditStudentsDetailsClicked = false;
-        isViewStudentsClicked = false;
-        isSearchBookClicked = false;
+        isAddBookClicked =
+        isEditStudentsDetailsClicked =
+        isViewStudentsClicked =
+        isSearchBookClicked =
+        isRemoveStudentClicked =
         isRemovedBookClicked = false;
         isStyleSelected = "dashboardHolder";
         clear();

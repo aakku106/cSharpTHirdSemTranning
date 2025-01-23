@@ -51,12 +51,15 @@ namespace LibaryManagementSystem.Data
                 BookId="143JAN",
                 BookName="Ram Kahani",
                 BookAuthor="Me",
-                BookReleaseDate="11-peace"
+                BookReleaseDate="11-peace",
+                HowManyBooks=1
+
             },new Books(){
                 BookId="Gh56",
                 BookName="GITA",
                 BookAuthor="KRISHNA",
-                BookReleaseDate=" ∞ ≠ ∞ "
+                BookReleaseDate=" ∞ ≠ ∞ ",
+                HowManyBooks=1233
             }
         };
 
