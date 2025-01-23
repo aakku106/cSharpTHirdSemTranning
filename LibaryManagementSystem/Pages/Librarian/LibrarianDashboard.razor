@@ -92,7 +92,8 @@
 
     .addBookWrapper,
     .removeBookWrapper,
-    .removeStudentWrapper {
+    .removeStudentWrapper,
+    .editStudentDetails {
         display: flex !important;
         flex-direction: column;
         gap: 10px;
@@ -203,7 +204,7 @@
     </svg>
 </a>
 
-    <body>
+    <body @onkeydown="handleKey">
     <h1>Librarian Dashboard</h1>
     <br>
     <h3>welcome @librarian.LibrarianId</h3>
@@ -221,7 +222,7 @@
     @if (isAddBookClicked)
         {
             <div class="popup">
-                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="act close" @onclick:stopPropagation @onkeydown="handleKey" @onclick="close"></div>
                 <div class="addBookWrapper">
                     @librarian.LibrarianId <span>fill up the following data</span>
                     @if (didErrorGenerated)
@@ -243,7 +244,7 @@
         }@if (isRemovedBookClicked)
         {
             <div class="popup">
-                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="act close" @onclick:stopPropagation @onkeydown="handleKey" @onclick="close"></div>
                 <div class="removeBookWrapper">
                     <input type="text" placeholder="Enter Book ID to REMOVE" @bind="selectIdTORemove">
                     @errorMessage
@@ -255,7 +256,7 @@
         @if (isSearchBookClicked)
         {
             <div class="popup">
-                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="act close" @onclick:stopPropagation @onkeydown="handleKey" @onclick="close"></div>
                 <div class="searchBookWrapper">
                     <table>
                         <tr>
@@ -281,7 +282,7 @@
         } @if (isViewStudentsClicked)
         {
             <div class="popup">
-                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="act close" @onclick:stopPropagation @onkeydown="handleKey" @onclick="close"></div>
                 <div class="viewStudentWrapper">
                     <table>
                         <tr>
@@ -306,21 +307,23 @@
         } @if (isEditStudentsDetailsClicked)
         {
             <div class="popup">
-                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
-
+                <div class="act close" @onclick:stopPropagation @onkeydown="handleKey" @onclick="close"></div>
+                <div class="editStudentDetails">
+                    <input type="text" placeholder="Enter Student's ID to EDIT">
+                    <input type="button" value="GO" style="color: blue;">
+                </div>
             </div>
         }
 
         @if (isRemoveStudentClicked)
         {
             <div class="popup">
-                <div class="act close" @onclick:stopPropagation @onclick="close"></div>
+                <div class="act close" @onclick:stopPropagation @onkeydown="handleKey" @onclick="close" tabindex="0"></div>
                 <div class="removeStudentWrapper">
                     <input type="text" placeholder="Enter Student ID" @bind="studentId">
                     <input type="button" value="REMOVE" style="color: red;" @onclick="RemoveStudentFromDB">
                 </div>
             </div>
-
         }
         <script src="/_framework/aspnetcore-browser-refresh.js"></script>
     </body>
@@ -431,7 +434,13 @@ else
             return;
         }
         studentList.student.RemoveAll(s => s.Id == studentId);
-
+    }
+    private void handleKey(KeyboardEventArgs e)
+    {
+        if (e.Key == "Escape")
+        {
+            close();
+        }
     }
     private void clear()
     {
