@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NvTtMOD2Op4e5ZMVBEr8u5xLuSKa3QJKkQtxeUDCuaE=",
+  "Hash": "Ypkmr6F3hIfgho61LlRjZcdkZyvMl4fqsd5qmBBqMfA=",
   "Source": "LibaryManagementSystem",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "2wlinuynw1",
-      "Integrity": "rjHqBsYVzuyZTq9CZ/oQZTfpiEoC07Di43EX5Dw3DZI=",
+      "Fingerprint": "6ox3tgj99j",
+      "Integrity": "Nro3Wy/2IHsPcnc3Ba00MOJZmrcwkjeIcIWhNYCwyFQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net8.0/blazor.boot.json"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "xdlgazx0qj",
-      "Integrity": "RZZnZ5dX4WEg2COhAFuGuifSemu121A00S0msbzFY84=",
+      "Fingerprint": "sysdfkrnfr",
+      "Integrity": "HH2XaF2/EjmLOSUenEFQOTMHD9jyqWId0dBO3zs8sGk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net8.0/LibaryManagementSystem.pdb"
@@ -304,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "z9b0hbnaht",
-      "Integrity": "F+b2U3Efv/9y1ZvuJFSqZcprot5mGraFTO2EM4zSDlE=",
+      "Fingerprint": "y1x9230br5",
+      "Integrity": "lv0F7CZmveQkiujfFetwXOaXbzGif3aFHOBvxHfccRs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/webcil/LibaryManagementSystem.wasm"
@@ -4931,7 +4931,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/System.Console.wasm"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-2wlinuynw1.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-6ox3tgj99j.gz",
       "SourceId": "LibaryManagementSystem",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/",
@@ -4945,8 +4945,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "pfw4s2hogc",
-      "Integrity": "NXFc7O83PwE9615PZdbyLWMlnJBvQkowALrqNMC+pBs=",
+      "Fingerprint": "6pm1mbb62p",
+      "Integrity": "1sRkXan2LFT0zcCrE04QFSQnUcqfMoyED9oZf1cI07A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json"
@@ -6023,7 +6023,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/System.Xml.XPath.XDocument.wasm"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-xdlgazx0qj.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-sysdfkrnfr.gz",
       "SourceId": "LibaryManagementSystem",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/",
@@ -6037,8 +6037,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/LibaryManagementSystem.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "zryytvpd6y",
-      "Integrity": "j83J5sau0Nt93QCqssBxu1TXtLKv5DB8RKV2I94srK4=",
+      "Fingerprint": "beiuoqwrqd",
+      "Integrity": "XcftKBRKDSnyg5EpBpqsWagu0B7VV8NvN18hKCF0mQs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/LibaryManagementSystem.pdb"
@@ -8102,7 +8102,7 @@
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/System.Transactions.wasm"
     },
     {
-      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-z9b0hbnaht.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-y1x9230br5.gz",
       "SourceId": "LibaryManagementSystem",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/",
@@ -8116,8 +8116,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/LibaryManagementSystem.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "d31j3usj7h",
-      "Integrity": "t9i21nQmI0yPD2dDh+Z+22eBdN4oJXBqrdOFjGw3bNQ=",
+      "Fingerprint": "kbt9wzjkft",
+      "Integrity": "UEcSw6UGqoP5mwb8BJy9sFWvS48DWBVyaESHWHwF3Gk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/bin/Debug/net8.0/wwwroot/_framework/LibaryManagementSystem.wasm"
@@ -8752,11 +8752,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rjHqBsYVzuyZTq9CZ/oQZTfpiEoC07Di43EX5Dw3DZI=\""
+          "Value": "\"Nro3Wy/2IHsPcnc3Ba00MOJZmrcwkjeIcIWhNYCwyFQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:51 GMT"
+          "Value": "Sun, 26 Jan 2025 07:07:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8766,18 +8766,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rjHqBsYVzuyZTq9CZ/oQZTfpiEoC07Di43EX5Dw3DZI="
+          "Value": "sha256-Nro3Wy/2IHsPcnc3Ba00MOJZmrcwkjeIcIWhNYCwyFQ="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-2wlinuynw1.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-6ox3tgj99j.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000114995400"
+          "Quality": "0.000115035086"
         }
       ],
       "ResponseHeaders": [
@@ -8787,15 +8787,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8695"
+          "Value": "8692"
         },
         {
           "Name": "ETag",
-          "Value": "\"NXFc7O83PwE9615PZdbyLWMlnJBvQkowALrqNMC+pBs=\""
+          "Value": "\"1sRkXan2LFT0zcCrE04QFSQnUcqfMoyED9oZf1cI07A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:23 GMT"
+          "Value": "Sun, 26 Jan 2025 06:59:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8815,19 +8815,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"rjHqBsYVzuyZTq9CZ/oQZTfpiEoC07Di43EX5Dw3DZI=\""
+          "Value": "W/\"Nro3Wy/2IHsPcnc3Ba00MOJZmrcwkjeIcIWhNYCwyFQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rjHqBsYVzuyZTq9CZ/oQZTfpiEoC07Di43EX5Dw3DZI="
+          "Value": "sha256-Nro3Wy/2IHsPcnc3Ba00MOJZmrcwkjeIcIWhNYCwyFQ="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-2wlinuynw1.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/4dtbre8o1h-6ox3tgj99j.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8836,7 +8836,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8695"
+          "Value": "8692"
         },
         {
           "Name": "Content-Type",
@@ -8844,11 +8844,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NXFc7O83PwE9615PZdbyLWMlnJBvQkowALrqNMC+pBs=\""
+          "Value": "\"1sRkXan2LFT0zcCrE04QFSQnUcqfMoyED9oZf1cI07A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:23 GMT"
+          "Value": "Sun, 26 Jan 2025 06:59:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8866,7 +8866,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NXFc7O83PwE9615PZdbyLWMlnJBvQkowALrqNMC+pBs="
+          "Value": "sha256-1sRkXan2LFT0zcCrE04QFSQnUcqfMoyED9oZf1cI07A="
         }
       ]
     },
@@ -10388,7 +10388,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "36704"
+          "Value": "36816"
         },
         {
           "Name": "Content-Type",
@@ -10396,11 +10396,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RZZnZ5dX4WEg2COhAFuGuifSemu121A00S0msbzFY84=\""
+          "Value": "\"HH2XaF2/EjmLOSUenEFQOTMHD9jyqWId0dBO3zs8sGk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:51 GMT"
+          "Value": "Sun, 26 Jan 2025 07:07:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10410,18 +10410,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RZZnZ5dX4WEg2COhAFuGuifSemu121A00S0msbzFY84="
+          "Value": "sha256-HH2XaF2/EjmLOSUenEFQOTMHD9jyqWId0dBO3zs8sGk="
         }
       ]
     },
     {
       "Route": "_framework/LibaryManagementSystem.pdb",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-xdlgazx0qj.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-sysdfkrnfr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000036569757"
+          "Quality": "0.000036357026"
         }
       ],
       "ResponseHeaders": [
@@ -10431,15 +10431,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27344"
+          "Value": "27504"
         },
         {
           "Name": "ETag",
-          "Value": "\"j83J5sau0Nt93QCqssBxu1TXtLKv5DB8RKV2I94srK4=\""
+          "Value": "\"XcftKBRKDSnyg5EpBpqsWagu0B7VV8NvN18hKCF0mQs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:23 GMT"
+          "Value": "Sun, 26 Jan 2025 06:59:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10459,19 +10459,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RZZnZ5dX4WEg2COhAFuGuifSemu121A00S0msbzFY84=\""
+          "Value": "W/\"HH2XaF2/EjmLOSUenEFQOTMHD9jyqWId0dBO3zs8sGk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RZZnZ5dX4WEg2COhAFuGuifSemu121A00S0msbzFY84="
+          "Value": "sha256-HH2XaF2/EjmLOSUenEFQOTMHD9jyqWId0dBO3zs8sGk="
         }
       ]
     },
     {
       "Route": "_framework/LibaryManagementSystem.pdb.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-xdlgazx0qj.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/d99z31u4nw-sysdfkrnfr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10480,7 +10480,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27344"
+          "Value": "27504"
         },
         {
           "Name": "Content-Type",
@@ -10488,11 +10488,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j83J5sau0Nt93QCqssBxu1TXtLKv5DB8RKV2I94srK4=\""
+          "Value": "\"XcftKBRKDSnyg5EpBpqsWagu0B7VV8NvN18hKCF0mQs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:23 GMT"
+          "Value": "Sun, 26 Jan 2025 06:59:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10510,7 +10510,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j83J5sau0Nt93QCqssBxu1TXtLKv5DB8RKV2I94srK4="
+          "Value": "sha256-XcftKBRKDSnyg5EpBpqsWagu0B7VV8NvN18hKCF0mQs="
         }
       ]
     },
@@ -10525,7 +10525,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "45333"
+          "Value": "45845"
         },
         {
           "Name": "Content-Type",
@@ -10533,11 +10533,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"F+b2U3Efv/9y1ZvuJFSqZcprot5mGraFTO2EM4zSDlE=\""
+          "Value": "\"lv0F7CZmveQkiujfFetwXOaXbzGif3aFHOBvxHfccRs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:51 GMT"
+          "Value": "Sun, 26 Jan 2025 07:07:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10547,18 +10547,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-F+b2U3Efv/9y1ZvuJFSqZcprot5mGraFTO2EM4zSDlE="
+          "Value": "sha256-lv0F7CZmveQkiujfFetwXOaXbzGif3aFHOBvxHfccRs="
         }
       ]
     },
     {
       "Route": "_framework/LibaryManagementSystem.wasm",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-z9b0hbnaht.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-y1x9230br5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000071017683"
+          "Quality": "0.000070482098"
         }
       ],
       "ResponseHeaders": [
@@ -10568,15 +10568,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14080"
+          "Value": "14187"
         },
         {
           "Name": "ETag",
-          "Value": "\"t9i21nQmI0yPD2dDh+Z+22eBdN4oJXBqrdOFjGw3bNQ=\""
+          "Value": "\"UEcSw6UGqoP5mwb8BJy9sFWvS48DWBVyaESHWHwF3Gk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:23 GMT"
+          "Value": "Sun, 26 Jan 2025 06:59:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10596,19 +10596,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"F+b2U3Efv/9y1ZvuJFSqZcprot5mGraFTO2EM4zSDlE=\""
+          "Value": "W/\"lv0F7CZmveQkiujfFetwXOaXbzGif3aFHOBvxHfccRs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-F+b2U3Efv/9y1ZvuJFSqZcprot5mGraFTO2EM4zSDlE="
+          "Value": "sha256-lv0F7CZmveQkiujfFetwXOaXbzGif3aFHOBvxHfccRs="
         }
       ]
     },
     {
       "Route": "_framework/LibaryManagementSystem.wasm.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-z9b0hbnaht.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/LibaryManagementSystem/obj/Debug/net8.0/compressed/wbjegmozud-y1x9230br5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10617,7 +10617,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14080"
+          "Value": "14187"
         },
         {
           "Name": "Content-Type",
@@ -10625,11 +10625,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t9i21nQmI0yPD2dDh+Z+22eBdN4oJXBqrdOFjGw3bNQ=\""
+          "Value": "\"UEcSw6UGqoP5mwb8BJy9sFWvS48DWBVyaESHWHwF3Gk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 08:07:23 GMT"
+          "Value": "Sun, 26 Jan 2025 06:59:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10647,7 +10647,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t9i21nQmI0yPD2dDh+Z+22eBdN4oJXBqrdOFjGw3bNQ="
+          "Value": "sha256-UEcSw6UGqoP5mwb8BJy9sFWvS48DWBVyaESHWHwF3Gk="
         }
       ]
     },
