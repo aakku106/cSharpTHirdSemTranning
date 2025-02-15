@@ -1,6 +1,8 @@
 @inject NavigationManager Navigation
 @using macOs.Applications
 @inject macOs.Applications.AppList.App application
+@rendermode InteractiveServer
+
 
 <style>
     .dock {
@@ -55,8 +57,8 @@
 
 @foreach(var apps in  application.app){
 
-    <span @onclick="OpenApp">
-        <img src="@apps.AppIcon" alt="@apps.ApplicationName">
+    <span >
+        <img src="@apps.AppIcon" alt="@apps.ApplicationName"  @onclick="() => OpenApp(apps)">
     </span>
 
 }
@@ -68,10 +70,9 @@
     </span>
 </span>
 @code {
-    private void OpenApp()
+
+    private void OpenApp(macOs.Applications.Application app)
     {
-
-        Navigation.NavigateTo("/finder");
-
+        StateHasChanged();
     }
 }

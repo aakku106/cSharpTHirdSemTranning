@@ -15,11 +15,13 @@
             z-index: 11111;
 
             .logo {
-                background-color: rgba(255, 255, 255, 0.392);
+                background-color: rgba(255, 255, 255, 0.235);
+
+
                 display: flex !important;
                 flex-direction: column !important;
-                gap: 10px;
-                width: 100px;
+                gap: 4px;
+                width: 150px;
                 backdrop-filter: blur(20px) !important;
                 color: rgb(255, 255, 255);
                 text-decoration: none;
@@ -28,10 +30,13 @@
                 z-index: 111111 !important;
                 border-radius: 10px;
                 padding: 1vw;
+                &:hover{
+                    backdrop-filter: blur(10px) !important;
+                }
 
 
                 .logoItem {
-                    width: 100px;
+                    @* width: 100px; *@
                     backdrop-filter: blur(20px) !important;
                     align-items: center;
                     border-radius: 10px;
@@ -50,13 +55,13 @@
     @if (isLogoClicked)
     {
         <ul class="logo">
-            <li class=" logoItem AboutThisMac ">About This Mac</li>
+            <li class=" logoItem AboutThisMac ">About This Mac</li> 
             <li class=" logoItem SystemSetting">System Setting</li>
-            <li class=" logoItem AppStore">App Store</li>
+            <li class=" logoItem AppStore">App Store</li> 
             <li class=" logoItem ForceQuit">Force Quit</li>
             <li class=" logoItem Sleep">Sleep</li>
             <li class=" logoItem Restart">Restart</li>
-            <li class=" logoItem ShutDown">Shut Down</li>
+            <li class=" logoItem ShutDown" @onclick="ShutDown">Shut Down</li>
             <li class=" logoItem LockScreen">Lock Screen</li>
             <li class=" logoItem LogOut">Log Out</li>
         </ul>
@@ -69,5 +74,8 @@
     private void IsLogoClicked()
     {
         isLogoClicked = !isLogoClicked;
+    }
+    private void ShutDown(){
+        Environment.Exit(0);
     }
 }
