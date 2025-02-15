@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/scopedcss/projectbundle/macOs.bundle.scp.css",
+      "PackagePath": "staticwebassets/macOs.7ygoglco99.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/trash.png",
+      "PackagePath": "staticwebassets/image/trash.png"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.macOs.props",
+      "PackagePath": "build\\macOs.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.macOs.props",
+      "PackagePath": "buildMultiTargeting\\macOs.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.macOs.props",
+      "PackagePath": "buildTransitive\\macOs.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.macOs.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.macOs.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

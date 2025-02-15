@@ -1,0 +1,68 @@
+@inject NavigationManager Navigation
+
+
+<style>
+    .dock {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(139, 27, 27, 0.627);
+        padding: 1vw;
+        transition: all .5s ease-in-out;
+        @* width: 100%; *@
+        margin-left: 45vw;
+        display: flex;
+        flex-direction: row !important;
+        gap: 10px;
+    border-radius: 10px;
+
+        &:hover {
+            background-color: darkred;
+            padding: 1.3vw;
+            gap: 25px;
+
+            img{
+                transform: scale(1.2) translateX(2px) translateY(-2px);
+            }
+           
+        }
+
+        img {
+            height: 30px;
+            width: 30px;
+            transition: all .5s ease-in-out;
+
+
+            &:hover {
+                transform: scale(2.5) translateX(5px) translateY(-5px);
+            }
+        }
+
+
+        .trash{
+            border-left: 2px solid white !important;
+            margin-left: 2px !important;
+        }
+    }
+</style>
+<span class="dock">
+    <span @onclick="OpenFinder">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/98/FinderBigSur.png" alt="finder">
+    </span>
+    <span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+            alt="VsCode">
+    </span>
+    <span class="trash">
+        <img src="/image/trash.png" 
+            alt="Trash">
+    </span>
+</span>
+@code {
+    private void OpenFinder()
+    {
+
+        Navigation.NavigateTo("/finder");
+
+    }
+}
