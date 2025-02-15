@@ -1,4 +1,4 @@
-@* @rendermode InteractiveServer *@
+@rendermode InteractiveServer
 
 <head>
     <style>
@@ -8,14 +8,66 @@
             left: 0;
             padding: 1vw;
             background-color: rgba(97, 93, 93, 0.276);
-            color: aliceblue;
+            color: white;
             backdrop-filter: blur(10px) !important;
             height: 15px;
             width: 100%;
+            z-index: 11111;
+
+            .logo {
+                background-color: rgba(255, 255, 255, 0.392);
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 10px;
+                width: 100px;
+                backdrop-filter: blur(20px) !important;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                list-style-type: none;
+                transition: all .3s ease-in-out !important;
+                z-index: 111111 !important;
+                border-radius: 10px;
+                padding: 1vw;
+
+
+                .logoItem {
+                    width: 100px;
+                    backdrop-filter: blur(20px) !important;
+                    align-items: center;
+                    border-radius: 10px;
+                    padding: 1vw;
+
+                    &:hover {
+                        background-color: rgba(58, 58, 223, 0.816);
+                    }
+                }
+            }
         }
     </style>
 </head>
 <div class="body">
-    <span class="about"></span>
+    <span class="about" @onclick="IsLogoClicked"></span>
+    @if (isLogoClicked)
+    {
+        <ul class="logo">
+            <li class=" logoItem AboutThisMac ">About This Mac</li>
+            <li class=" logoItem SystemSetting">System Setting</li>
+            <li class=" logoItem AppStore">App Store</li>
+            <li class=" logoItem ForceQuit">Force Quit</li>
+            <li class=" logoItem Sleep">Sleep</li>
+            <li class=" logoItem Restart">Restart</li>
+            <li class=" logoItem ShutDown">Shut Down</li>
+            <li class=" logoItem LockScreen">Lock Screen</li>
+            <li class=" logoItem LogOut">Log Out</li>
+        </ul>
+    }
 
 </div>
+
+@code {
+    private bool isLogoClicked = false;
+    private void IsLogoClicked()
+    {
+        isLogoClicked = !isLogoClicked;
+    }
+}

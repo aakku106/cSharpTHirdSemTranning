@@ -1,7 +1,13 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using macOs.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddRazorComponents().AddInteractiveServerComponents();
 // Add services to the container.
 builder.Services.AddRazorComponents();
 builder.Services.AddSingleton<macOs.Applications.AppList.App>();
@@ -17,11 +23,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-
 app.UseAntiforgery();
 
 app.MapStaticAssets();
-app.MapRazorComponents<App>();
+app.MapRazorComponents<App>().AddInteractiveServerRenderMode(); // Corrected placement
 
 app.Run();
