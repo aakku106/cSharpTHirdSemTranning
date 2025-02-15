@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/app.css"
     },
     {
+      "Id": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/apple.jpg",
+      "PackagePath": "staticwebassets/image/apple.jpg"
+    },
+    {
       "Id": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/trash.png",
       "PackagePath": "staticwebassets/image/trash.png"
     },

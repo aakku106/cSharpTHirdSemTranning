@@ -1,5 +1,6 @@
 @inject NavigationManager Navigation
-
+@using macOs.Applications
+@inject macOs.Applications.AppList.App application
 
 <style>
     .dock {
@@ -10,11 +11,12 @@
         padding: 1vw;
         transition: all .5s ease-in-out;
         @* width: 100%; *@
-        margin-left: 45vw;
+        margin-left: 42vw;
         display: flex;
         flex-direction: row !important;
         gap: 10px;
-    border-radius: 10px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px)!important;
 
         &:hover {
             background-color: darkred;
@@ -24,20 +26,22 @@
             img{
                 transform: scale(1.2) translateX(2px) translateY(-2px);
             }
-           
+            .trash{
+                border-left: 2px solid rgba(255, 255, 255, 0.509) !important;
+            }
         }
 
         img {
             height: 30px;
             width: 30px;
-            transition: all .5s ease-in-out;
-
+            transition: all .3s ease-in-out;
 
             &:hover {
-                transform: scale(2.5) translateX(5px) translateY(-5px);
+                transform: scale(3.5) translateX(2px) translateY(-7px);
+                margin-left: 1.5vw;
+                margin-right: 1.5vw;
             }
         }
-
 
         .trash{
             border-left: 2px solid white !important;
@@ -46,20 +50,25 @@
     }
 </style>
 <span class="dock">
-    <span @onclick="OpenFinder">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/98/FinderBigSur.png" alt="finder">
+    
+
+
+@foreach(var apps in  application.app){
+
+    <span @onclick="OpenApp">
+        <img src="@apps.AppIcon" alt="@apps.ApplicationName">
     </span>
-    <span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
-            alt="VsCode">
-    </span>
+
+}
+
+
     <span class="trash">
-        <img src="/image/trash.png" 
-            alt="Trash">
+        <img 
+        src="/image/trash.png" alt="Trash">
     </span>
 </span>
 @code {
-    private void OpenFinder()
+    private void OpenApp()
     {
 
         Navigation.NavigateTo("/finder");

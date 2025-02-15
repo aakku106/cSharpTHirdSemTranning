@@ -301,6 +301,88 @@
       ]
     },
     {
+      "Route": "image/apple.7kzkjw9z27.jpg",
+      "AssetFile": "image/apple.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "455875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+UvNdv5NYqX0myQlhHnOv0jcNhN12lWT1bP2gvXt4Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 14:45:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7kzkjw9z27"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+UvNdv5NYqX0myQlhHnOv0jcNhN12lWT1bP2gvXt4Gs="
+        },
+        {
+          "Name": "label",
+          "Value": "image/apple.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "image/apple.jpg",
+      "AssetFile": "image/apple.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "455875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+UvNdv5NYqX0myQlhHnOv0jcNhN12lWT1bP2gvXt4Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 14:45:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+UvNdv5NYqX0myQlhHnOv0jcNhN12lWT1bP2gvXt4Gs="
+        }
+      ]
+    },
+    {
       "Route": "image/trash.ddomw20yy4.png",
       "AssetFile": "image/trash.png",
       "Selectors": [],
