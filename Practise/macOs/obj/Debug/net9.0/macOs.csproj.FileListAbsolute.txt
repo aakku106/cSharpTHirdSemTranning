@@ -33,4 +33,3 @@
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/macOs.pdb
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/macOs.genruntimeconfig.cache
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/ref/macOs.dll
-/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/al8pfniwki-sc114w85pm.gz

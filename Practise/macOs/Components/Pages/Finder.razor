@@ -5,17 +5,6 @@
 
 
 <style>
-    /* Reset & Fonts */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #1e1e1e;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-
     /* Finder Window */
     .finder-window {
         width: 600px;
@@ -101,15 +90,66 @@
         padding: 20px;
         color: white;
     }
+
+
+
+    .finder-window {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        width: 600px;
+        min-height: 200px;
+        background: #2c2c2e;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        resize: both;
+        overflow: auto;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .finder-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #3a3a3c;
+        padding: 8px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: grab;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 6px;
+        margin-left: 10px;
+    }
+
+    .buttons span {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .close {
+        background: #ff5f57;
+    }
+
+    .maximize {
+        background: #28c840;
+    }
 </style>
 
 <body>
-    <div class="finder-window">
-        <div class="finder-header">
+    <div class="finder-window" style="@($"top: {posY}px; left: {posX}px;")" @onmousemove="HandleMouseMove"
+        @onmouseup="EndDrag">
+
+        <div class="finder-header" @onmousedown="StartDrag">
             <div class="buttons">
-                <span class="close"></span>
-                <span class="minimize"></span>
-                <span class="maximize"></span>
+                <span class="close" @onclick="CloseFinder"></span>
+                <span class="maximize" @onclick="ToggleMaximize"></span>
             </div>
             <span class="title">Desktop</span>
         </div>
@@ -138,3 +178,41 @@
         </div>
     </div>
 </body>
+
+
+@code {
+    private double posX = 200, posY = 100;
+    private double startX, startY;
+    private bool isDragging = false;
+
+    private void StartDrag(MouseEventArgs e)
+    {
+        isDragging = true;
+        startX = e.ClientX - posX;
+        startY = e.ClientY - posY;
+    }
+
+    private void HandleMouseMove(MouseEventArgs e)
+    {
+        if (isDragging)
+        {
+            posX = e.ClientX - startX;
+            posY = e.ClientY - startY;
+        }
+    }
+
+    private void EndDrag()
+    {
+        isDragging = false;
+    }
+
+    private void CloseFinder()
+    {
+        Console.WriteLine("Finder Closed");
+    }
+
+    private void ToggleMaximize()
+    {
+        Console.WriteLine("Maximized/Restored");
+    }
+}
