@@ -6,5 +6,6 @@ namespace macOs.Applications
         public string ApplicationName = string.Empty;
         public bool IsApplicationOpen = false;
         public string AppIcon = string.Empty;
+        public Type? ComponentType { get; set; }
     };
 }

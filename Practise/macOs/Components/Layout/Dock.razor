@@ -3,7 +3,6 @@
 @inject macOs.Applications.AppList.App application
 @rendermode InteractiveServer
 
-
 <style>
     .dock {
         position: absolute;
@@ -13,68 +12,83 @@
         background-color: rgba(139, 27, 27, 0.627);
         padding: 1vw;
         transition: all .4s ease-in-out;
-
         display: flex;
         flex-direction: row !important;
         gap: 10px;
         border-radius: 10px;
         backdrop-filter: blur(10px) !important;
+    }
 
-        &:hover {
-            background-color: darkred;
-            transform: translateX(-50%) translateY(-20%) scale(1.2);
-            bottom: 0% !important;
-            gap: 25px;
+    .dock:hover {
+        background-color: darkred;
+        transform: translateX(-50%) translateY(-20%) scale(1.2);
+        bottom: 0% !important;
+        gap: 25px;
+    }
 
-            img {
-                transform: scale(1.2) translateX(2px) translateY(-2px);
-            }
+    .dock img {
+        height: 30px;
+        width: 30px;
+        transition: all .3s ease-in-out;
+    }
 
-            .trash {
-                border-left: 2px solid rgba(255, 255, 255, 0.509) !important;
-            }
-        }
+    .dock img:hover {
+        transform: scale(3.5) translateX(2px) translateY(-7px);
+    }
 
-        img {
-            height: 30px;
-            width: 30px;
-            transition: all .3s ease-in-out;
+    .trash {
+        border-left: 2px solid white !important;
+        margin-left: 2px !important;
+    }
 
-            &:hover {
-                transform: scale(3.5) translateX(2px) translateY(-7px);
-                margin-left: 1.5vw;
-                margin-right: 1.5vw;
-            }
-        }
+    .app-window {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 50%) scale(0);
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease-in-out;
+        z-index: 1;
+        opacity: 0;
+    }
 
-        .trash {
-            border-left: 2px solid white !important;
-            margin-left: 2px !important;
-        }
+    .app-window.active {
+        transform: translate(-50%, 0%) scale(1);
+        opacity: 1;
+        z-index: 100;
     }
 </style>
+
 <span class="dock">
-
-
-
     @foreach (var apps in application.app)
     {
-
         <span>
             <img src="@apps.AppIcon" alt="@apps.ApplicationName" @onclick="() => OpenApp(apps)">
         </span>
-
     }
-
-
     <span class="trash">
         <img src="/image/trash.png" alt="Trash">
     </span>
 </span>
+
+@foreach (var openApp in OpenedApps)
+{
+    <div class="app-window @(openApp.IsApplicationOpen ? "active" : "")">
+        <DynamicComponent Type="openApp.ComponentType" />
+    </div>
+}
+
 @code {
+    private  List<macOs.Applications.Application> OpenedApps = new();
 
     private void OpenApp(macOs.Applications.Application app)
     {
+        if (!OpenedApps.Contains(app))
+        {
+            OpenedApps.Add(app);
+        }
+        app.IsApplicationOpen = true;
         StateHasChanged();
     }
 }
