@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/image/trash.png"
     },
     {
+      "Id": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/js/finder.js",
+      "PackagePath": "staticwebassets/js/finder.js"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.macOs.props",
       "PackagePath": "build\\macOs.props"
     },
