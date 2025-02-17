@@ -17,6 +17,7 @@
         gap: 10px;
         border-radius: 10px;
         backdrop-filter: blur(10px) !important;
+        z-index: 99999;
     }
 
     .dock:hover {
@@ -29,11 +30,13 @@
     .dock img {
         height: 30px;
         width: 30px;
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
     }
 
     .dock img:hover {
         transform: scale(3.5) translateX(2px) translateY(-7px);
+        transition: all .3s ease-in-out;
+
     }
 
     .trash {
