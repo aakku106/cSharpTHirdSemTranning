@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Um+p25x2wAFUUjPxjUl4eUDKxtZuFTT59rY6VFKLIdQ=",
+  "Hash": "eAyuAjYDjnQuvcpcMB/4Wewurvs8kNkB0+FyP2cqgNY=",
   "Source": "macOs",
   "BasePath": "_content/macOs",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-4kywy7iv6g.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-jyyw36s2rg.gz",
       "SourceId": "macOs",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/macOs",
-      "RelativePath": "app#[.{fingerprint=4kywy7iv6g}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=jyyw36s2rg}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ahq59hg6v0",
-      "Integrity": "st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=",
+      "Fingerprint": "ntyp4kqk91",
+      "Integrity": "dY/AEjBAEJe6BQDLOEC12CbpowHknYhudgBAutZ4MJ8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4kywy7iv6g",
-      "Integrity": "9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=",
+      "Fingerprint": "jyyw36s2rg",
+      "Integrity": "BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/app.css"
@@ -187,13 +187,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "app.4kywy7iv6g.css",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-4kywy7iv6g.gz",
+      "Route": "app.css",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-jyyw36s2rg.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000721500722"
+          "Quality": "0.000506842372"
         }
       ],
       "ResponseHeaders": [
@@ -203,19 +203,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1385"
+          "Value": "1972"
         },
         {
           "Name": "ETag",
-          "Value": "\"st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=\""
+          "Value": "\"dY/AEjBAEJe6BQDLOEC12CbpowHknYhudgBAutZ4MJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 12:09:41 GMT"
+          "Value": "Mon, 17 Feb 2025 11:02:56 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -231,26 +231,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+          "Value": "W/\"BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "4kywy7iv6g"
-        },
-        {
-          "Name": "label",
-          "Value": "app.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+          "Value": "sha256-BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw="
         }
       ]
     },
     {
-      "Route": "app.4kywy7iv6g.css",
+      "Route": "app.css",
       "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -260,7 +252,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2463"
+          "Value": "4978"
         },
         {
           "Name": "Content-Type",
@@ -268,11 +260,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+          "Value": "\"BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 12:09:41 GMT"
+          "Value": "Mon, 17 Feb 2025 11:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw="
+        }
+      ]
+    },
+    {
+      "Route": "app.css.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-jyyw36s2rg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dY/AEjBAEJe6BQDLOEC12CbpowHknYhudgBAutZ4MJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 11:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dY/AEjBAEJe6BQDLOEC12CbpowHknYhudgBAutZ4MJ8="
+        }
+      ]
+    },
+    {
+      "Route": "app.jyyw36s2rg.css",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-jyyw36s2rg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000506842372"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1972"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dY/AEjBAEJe6BQDLOEC12CbpowHknYhudgBAutZ4MJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 11:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jyyw36s2rg"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw="
+        }
+      ]
+    },
+    {
+      "Route": "app.jyyw36s2rg.css",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 11:02:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -282,7 +419,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4kywy7iv6g"
+          "Value": "jyyw36s2rg"
         },
         {
           "Name": "label",
@@ -290,13 +427,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+          "Value": "sha256-BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw="
         }
       ]
     },
     {
-      "Route": "app.4kywy7iv6g.css.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-4kywy7iv6g.gz",
+      "Route": "app.jyyw36s2rg.css.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-jyyw36s2rg.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -305,7 +442,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1385"
+          "Value": "1972"
         },
         {
           "Name": "Content-Type",
@@ -313,11 +450,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=\""
+          "Value": "\"dY/AEjBAEJe6BQDLOEC12CbpowHknYhudgBAutZ4MJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 12:09:41 GMT"
+          "Value": "Mon, 17 Feb 2025 11:02:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -335,7 +472,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4kywy7iv6g"
+          "Value": "jyyw36s2rg"
         },
         {
           "Name": "label",
@@ -343,144 +480,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U="
-        }
-      ]
-    },
-    {
-      "Route": "app.css",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-4kywy7iv6g.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000721500722"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1385"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 12:09:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
-        }
-      ]
-    },
-    {
-      "Route": "app.css",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2463"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 12:09:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
-        }
-      ]
-    },
-    {
-      "Route": "app.css.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-4kywy7iv6g.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1385"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 12:09:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-st3KXVd5LITX3Mv9IexzVj2I0PHdFaEDCO8yBMBUp6U="
+          "Value": "sha256-dY/AEjBAEJe6BQDLOEC12CbpowHknYhudgBAutZ4MJ8="
         }
       ]
     },
@@ -673,7 +673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -734,7 +734,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -779,7 +779,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -834,7 +834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -895,7 +895,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -940,7 +940,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -995,7 +995,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1048,7 +1048,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1085,7 +1085,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1132,7 +1132,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1185,7 +1185,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1222,7 +1222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 16:51:53 GMT"
+          "Value": "Mon, 17 Feb 2025 11:08:34 GMT"
         },
         {
           "Name": "Cache-Control",

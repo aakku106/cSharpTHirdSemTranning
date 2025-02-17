@@ -1,6 +1,11 @@
 ﻿@inherits LayoutComponentBase
 @using macOs.Components.Layout
 
+<style>
+   
+   
+</style>
+
 <div class="main-layout">
     <Menubar />
     <div class="desktop">
@@ -9,26 +14,3 @@
     <Dock />
 </div>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .main-layout {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    .desktop {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-</style>
