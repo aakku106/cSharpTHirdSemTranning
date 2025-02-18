@@ -1,8 +1,12 @@
+@* @using dock *@
+@using macOs.Applications.AppList
+@rendermode InteractiveServer
+
 <div class="finder-window" style="@($"top: {posY}px; left: {posX}px;")" @onmousemove="HandleMouseMove"
     @onmouseup="EndDrag">
     <div class="finder-header" @onmousedown="StartDrag">
         <div class="buttons" @onmousedown="StartDrag">
-            <span class="close" @onclick="CloseFinder"></span>
+            <span class="close" @onclick="CloseSafari"></span>
             <span class="maximize" @onclick="ToggleMaximize"></span>
         </div>
         <span class="title">Safari</span>
@@ -15,6 +19,7 @@
     private double posX = 200, posY = 100;
     private double startX, startY;
     private bool isDragging = false;
+    public static bool closeSafari = false;
 
     private void StartDrag(MouseEventArgs e)
     {
@@ -37,13 +42,15 @@
         isDragging = false;
     }
 
-    private void CloseFinder()
+    public static void CloseSafari()
     {
-        Console.WriteLine("Finder Closed");
+        closeSafari = true;
+        macOs.Components.Layout.Dock.CloseApp();
+        Console.WriteLine("Safari Closed");
     }
 
     private void ToggleMaximize()
     {
-        Console.WriteLine("Maximized/Restored");
+        Console.WriteLine("SAfari Maximized/Restored");
     }
 }

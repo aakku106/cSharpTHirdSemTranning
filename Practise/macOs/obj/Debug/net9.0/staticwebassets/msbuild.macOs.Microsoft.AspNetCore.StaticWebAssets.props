@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jyyw36s2rg</Fingerprint>
-      <Integrity>BYzuz/3UneeoOolNVaPMPtrRD+IRqPCSWvuenz/mLnw=</Integrity>
+      <Fingerprint>shijankh04</Fingerprint>
+      <Integrity>oJW9VUg1O0fXYHqC4IubE+1GOegt66Kyj+rJOxeI2SU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
@@ -54,23 +54,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\trash.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\macOs.7ygoglco99.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\macOs.w0mqwq0cnb.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>macOs</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/macOs</BasePath>
-      <RelativePath>macOs.7ygoglco99.bundle.scp.css</RelativePath>
+      <RelativePath>macOs.w0mqwq0cnb.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>7ygoglco99</Fingerprint>
-      <Integrity>z6+SU1x4dWEypngcVyqmN6k4aXWYiuvjgRZUDgbBvh0=</Integrity>
+      <Fingerprint>w0mqwq0cnb</Fingerprint>
+      <Integrity>AEYmIojfDzOnJzQE8NmZQs4zaQnV5Kb6jpxXA+FeRt8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\macOs.7ygoglco99.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\macOs.w0mqwq0cnb.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

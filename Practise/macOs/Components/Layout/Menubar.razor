@@ -1,73 +1,136 @@
 @rendermode InteractiveServer
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .body {
             position: absolute;
             top: 0;
             left: 0;
+            height: 37px !important;
             padding: 1vw;
             background-color: rgba(97, 93, 93, 0.276);
             color: white;
             backdrop-filter: blur(10px) !important;
-            height: 15px;
             width: 100%;
             z-index: 11111;
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-between !important;
 
-            .logo {
-                background-color: rgba(255, 255, 255, 0.235);
-
-
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 4px;
-                width: 150px;
-                backdrop-filter: blur(20px) !important;
-                color: rgb(255, 255, 255);
-                text-decoration: none;
-                list-style-type: none;
-                transition: all .3s ease-in-out !important;
-                z-index: 111111 !important;
-                border-radius: 10px;
-                padding: 1vw;
-                &:hover{
-                    backdrop-filter: blur(10px) !important;
-                }
-
-
-                .logoItem {
-                    backdrop-filter: blur(20px) !important;
-                    align-items: center;
-                    border-radius: 10px;
-                    padding: 1vw;
+            .leftItems {
+                .about {
+                    font-size: 1.3rem;
+                    transition: all 0.2s ease-in-out;
 
                     &:hover {
-                        background-color: rgba(58, 58, 223, 0.816);
-                        box-shadow: 0px 0px 90px  rgba(58, 58, 223, 0.816);
+                        transform: scale(20px) !important;
                     }
                 }
+                .logo {
+                        background-color: rgba(255, 255, 255, 0.235);
+                        display: flex !important;
+                        flex-direction: column !important;
+                        gap: 4px;
+                        @* width: 150px; *@
+                        padding: .1vw;
+                        backdrop-filter: blur(20px) !important;
+                        @* color: rgb(255, 255, 255); *@
+                        text-decoration: none;
+                        list-style-type: none !important;
+                        transition: all .3s ease-in-out !important;
+                        z-index: 111111 !important;
+                        border-radius: 10px;
+                        padding: 1vw;
+
+                        &:hover {
+                            backdrop-filter: blur(10px) !important;
+                        }
+
+                        .logoItem {
+                            z-index: 9999999999;
+                            backdrop-filter: blur(20px) !important;
+                            align-items: center;
+                            border-radius: 10px;
+                            padding: 1vw;
+
+                            &:hover {
+                                background-color: rgba(58, 58, 223, 0.816);
+                                box-shadow: 0px 0px 90px rgba(58, 58, 223, 0.816);
+                            }
+                        }
+                    }  
+            }
+            .rightItems{
+   ul {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .wifi,
+        .charge,
+        .control {
+            font-size: 18px;
+            color: $text-color;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
             }
         }
+
+        .control {
+            font-size: 20px;
+        }
+
+
+
+
+
+
+
+}     
     </style>
 </head>
-<div class="body">
-    <span class="about" @onclick="IsLogoClicked"></span>
-    @if (isLogoClicked)
-    {
-        <ul class="logo">
-            <li class=" logoItem AboutThisMac ">About This Mac</li> 
-            <li class=" logoItem SystemSetting">System Setting</li>
-            <li class=" logoItem AppStore">App Store</li> 
-            <li class=" logoItem ForceQuit">Force Quit</li>
-            <li class=" logoItem Sleep">Sleep</li>
-            <li class=" logoItem Restart">Restart</li>
-            <li class=" logoItem ShutDown" @onclick="ShutDown">Shut Down</li>
-            <li class=" logoItem LockScreen">Lock Screen</li>
-            <li class=" logoItem LogOut">Log Out</li>
-        </ul>
-    }
+<div class="body" @onclick="body">
+    <div class="leftItems">
+        <span class="about" @onclick="IsLogoClicked"></span>
+        @if (isLogoClicked)
+        {
+            <ul class="logo">
+                <li class=" logoItem AboutThisMac ">About This Mac</li>
+                <li class=" logoItem SystemSetting">System Setting</li>
+                <li class=" logoItem AppStore">App Store</li>
+                <li class=" logoItem ForceQuit">Force Quit</li>
+                <li class=" logoItem Sleep">Sleep</li>
+                <li class=" logoItem Restart">Restart</li>
+                <li class=" logoItem ShutDown" @onclick="ShutDown">Shut Down</li>
+                <li class=" logoItem LockScreen">Lock Screen</li>
+                <li class=" logoItem LogOut">Log Out</li>
+            </ul>
+        }
+    </div>
+    <div class="rightItems">
+    <ul>
+        <li class="charge"></li>
+        <li class="wifi "></li>
+        <i class="fa-duotone fa-solid fa-wifi"></i>
+        <li class="control "></li>
+        <i class="fa-solid fa-toggle-on control-center-icon"></i>
+        <li class="dateAndTime"></li>
 
+        <i class="fa-solid fa-wifi"></i>  
+<i class="fa-solid fa-bell"></i>  
+<i class="fa-solid fa-gear"></i>
+    </ul>
 </div>
+</div>
+
 
 @code {
     private static bool isLogoClicked = false;
@@ -75,7 +138,12 @@
     {
         isLogoClicked = !isLogoClicked;
     }
-    private void ShutDown(){
+    private void ShutDown()
+    {
         Environment.Exit(0);
+    }
+
+    private void body(){
+        isLogoClicked=false;
     }
 }

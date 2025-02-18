@@ -1,5 +1,7 @@
+@* @namespace dock *@
 @inject NavigationManager Navigation
 @using macOs.Applications
+@using macOs.Components.Pages
 @inject macOs.Applications.AppList.App application
 @rendermode InteractiveServer
 
@@ -82,16 +84,28 @@
     </div>
 }
 
-@code {
-    private static List<macOs.Applications.Application> OpenedApps = new();
 
-    private void OpenApp(macOs.Applications.Application app)
+@code {
+    public static List<macOs.Applications.Application> OpenedApps = new();
+    public static macOs.Applications.Application? MyApp;
+    public void OpenApp(macOs.Applications.Application app)
     {
+        MyApp = app;
         if (!OpenedApps.Contains(app))
         {
             OpenedApps.Add(app);
         }
         app.IsApplicationOpen = true;
         StateHasChanged();
+    }
+    public static void CloseApp()
+    {
+        if (macOs.Components.Pages.Safari.closeSafari)
+        {
+            OpenedApps.Remove(MyApp);
+        }
+        if(Pages.VsCode.closeVs){
+            OpenedApps.Remove(MyApp);
+        }
     }
 }

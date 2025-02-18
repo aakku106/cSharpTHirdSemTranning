@@ -2,7 +2,7 @@
     @onmouseup="EndDrag">
     <div class="finder-header" @onmousedown="StartDrag">
         <div class="buttons">
-            <span class="close" @onclick="CloseFinder"></span>
+            <span class="close" @onclick="Code"></span>
             <span class="maximize" @onclick="ToggleMaximize"></span>
         </div>
         <span class="title">VS Code</span>
@@ -25,6 +25,7 @@
     private double posX = 200, posY = 100;
     private double startX, startY;
     private bool isDragging = false;
+    public static bool closeVs = false;
 
     private void StartDrag(MouseEventArgs e)
     {
@@ -47,9 +48,11 @@
         isDragging = false;
     }
 
-    private void CloseFinder()
+    public static void Code()
     {
-        Console.WriteLine("Finder Closed");
+        closeVs = true;
+        macOs.Components.Layout.Dock.CloseApp();
+        Console.WriteLine("VSCode Closed");
     }
 
     private void ToggleMaximize()
