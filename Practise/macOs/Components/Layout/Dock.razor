@@ -1,9 +1,6 @@
-@* @namespace dock *@
-@inject NavigationManager Navigation
-@using macOs.Applications
+@rendermode InteractiveServer
 @using macOs.Components.Pages
 @inject macOs.Applications.AppList.App application
-@rendermode InteractiveServer
 
 <style>
     .dock {
@@ -86,26 +83,34 @@
 
 
 @code {
-    public static List<macOs.Applications.Application> OpenedApps = new();
-    public static macOs.Applications.Application? MyApp;
+    public List<macOs.Applications.Application> OpenedApps = new();
+
     public void OpenApp(macOs.Applications.Application app)
     {
-        MyApp = app;
         if (!OpenedApps.Contains(app))
         {
             OpenedApps.Add(app);
+            app.IsApplicationOpen = true;
+            Console.WriteLine($"App Opened: {app.ApplicationName}");
         }
-        app.IsApplicationOpen = true;
-        StateHasChanged();
-    }
-    public static void CloseApp()
-    {
-        if (macOs.Components.Pages.Safari.closeSafari)
+        else
         {
-            OpenedApps.Remove(MyApp);
+            Console.WriteLine($"{app.ApplicationName} is already open.");
         }
-        if(Pages.VsCode.closeVs){
-            OpenedApps.Remove(MyApp);
+        foreach (var apps in OpenedApps)
+        {
+            Console.WriteLine($"Opened App: {apps.ApplicationName}");
+        }
+
+    }
+
+    public void CloseApp(macOs.Applications.Application app)
+    {
+        Console.WriteLine("function has been called weeeeeeee");
+        if (OpenedApps.Contains(app))
+        {
+            OpenedApps.Remove(app);
+            app.IsApplicationOpen = false;
         }
     }
 }

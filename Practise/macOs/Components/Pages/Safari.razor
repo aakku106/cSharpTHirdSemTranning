@@ -1,6 +1,9 @@
-@* @using dock *@
-@using macOs.Applications.AppList
 @rendermode InteractiveServer
+
+@using macOs.Applications.AppList
+@inject macOs.Components.Layout.Dock DockComponent
+
+
 
 <div class="finder-window" style="@($"top: {posY}px; left: {posX}px;")" @onmousemove="HandleMouseMove"
     @onmouseup="EndDrag">
@@ -19,7 +22,8 @@
     private double posX = 200, posY = 100;
     private double startX, startY;
     private bool isDragging = false;
-    public static bool closeSafari = false;
+    public bool closeSafari = false;
+    public List<macOs.Applications.Application> getValue{get;set;}=new();
 
     private void StartDrag(MouseEventArgs e)
     {
@@ -42,11 +46,26 @@
         isDragging = false;
     }
 
-    public static void CloseSafari()
+    public void CloseSafari()
     {
-        closeSafari = true;
-        macOs.Components.Layout.Dock.CloseApp();
-        Console.WriteLine("Safari Closed");
+        Console.WriteLine("Attempting to close Safari...");
+        Console.WriteLine($"Total Opened Apps: {DockComponent.OpenedApps.Count}");
+
+        foreach (var app in DockComponent.OpenedApps)
+        {
+            Console.WriteLine($"Opened App: {app.ApplicationName}");
+        }
+
+        var safariApp = DockComponent.OpenedApps.FirstOrDefault(a => a.ApplicationName.Trim().ToLower() == "safari");
+        if (safariApp != null)
+        {
+            Console.WriteLine("Safari found! Closing...");
+            DockComponent.CloseApp(safariApp);
+        }
+        else
+        {
+            Console.WriteLine("Safari not found in OpenedApps!");
+        }
     }
 
     private void ToggleMaximize()
