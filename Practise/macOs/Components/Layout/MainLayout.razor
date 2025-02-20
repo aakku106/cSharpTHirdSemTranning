@@ -1,10 +1,13 @@
 ﻿@inherits LayoutComponentBase
-@using macOs.Components.Layout
 
 <div class="main-layout">
-    <Menubar />
+    <div id="menubar">
+        <Menubar />
+    </div>
     <div class="desktop">
         @Body
     </div>
-    <Dock />
+    <div id="dock">
+        <Dock />
+    </div>
 </div>

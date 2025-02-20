@@ -1,6 +1,4 @@
 @rendermode InteractiveServer
-@using macOs.Components.Pages
-@inject macOs.Applications.AppList.App application
 
 <style>
     .dock {
@@ -35,7 +33,7 @@
     }
 
     .dock img:hover {
-        transform: scale(3.5) translateX(2px) translateY(-7px);
+        transform: scale(2.5) translateX(2px) translateY(-7px);
         transition: all .3s ease-in-out;
         margin-right: 2vw;
         margin-left: 2vw;
@@ -49,7 +47,6 @@
     .app-window {
         position: absolute;
         bottom: 0;
-        @* left: 50%; *@
         transform: translate(-50%, 50%) scale(0);
         opacity: 0;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -60,12 +57,14 @@
 
     .active {
         bottom: unset;
+        top: 1% !important;
         transform: translate(-50%, 0) scale(1);
         opacity: 1;
         z-index: 100;
     }
 
     .swoop-out {
+        top: unset !important;
         transform: translate(-50%, 50%) scale(0);
         opacity: 0;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -95,18 +94,20 @@
 @code {
     public List<macOs.Applications.Application> OpenedApps = new();
 
-    public void OpenApp(macOs.Applications.Application app)
+    public async void OpenApp(macOs.Applications.Application app)
     {
         if (!OpenedApps.Contains(app))
         {
             OpenedApps.Add(app);
             app.IsApplicationOpen = true;
+            await InvokeAsync(StateHasChanged);
             Console.WriteLine($"App Opened: {app.ApplicationName}");
         }
         else
         {
             OpenedApps.Remove(app);
             app.IsApplicationOpen = false;
+            await InvokeAsync(StateHasChanged);
             Console.WriteLine(@$"{app.ApplicationName} is closed");
         }
     }
@@ -119,11 +120,8 @@
         {
             app.IsApplicationOpen = false;
             await InvokeAsync(StateHasChanged);
-
-            // 🔥 Wait for animation before removing the app
-            await Task.Delay(300); // Same as transition time in CSS
+            await Task.Delay(300);
             OpenedApps.Remove(app);
-
             Console.WriteLine($@"{app.ApplicationName} closeddddddddd !!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             await InvokeAsync(StateHasChanged);
         }

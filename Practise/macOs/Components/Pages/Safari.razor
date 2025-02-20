@@ -1,9 +1,5 @@
 @rendermode InteractiveServer
 
-@using macOs.Applications.AppList
-@inject macOs.Components.Layout.Dock DockComponent
-
-
 
 <div class="finder-window" style="@($"top: {posY}px; left: {posX}px;")" @onmousemove="HandleMouseMove"
     @onmouseup="EndDrag">

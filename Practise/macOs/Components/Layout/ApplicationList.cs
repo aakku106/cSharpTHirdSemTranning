@@ -1,5 +1,5 @@
 using macOs.Applications;
-using macOs.Components.Pages; 
+using macOs.Components.Pages;
 
 namespace macOs.Applications.AppList;
 
@@ -16,7 +16,7 @@ public class App
             ApplicationName="VS Code",
             IsApplicationOpen=false,
             AppIcon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png",
-            ComponentType = typeof(VsCode) 
+            ComponentType = typeof(VsCode)
         },
         new(){
             ApplicationName="Safari",
