@@ -35,7 +35,17 @@
     .dock img:hover {
         transform: scale(3.5) translateX(2px) translateY(-7px);
         transition: all .3s ease-in-out;
+        margin-right:2vw;
+        margin-left: 2vw;
+    }
 
+    .dock img:not(:hover) {
+        display: none !important;
+        
+        @* transform: scale(3.5) translateX(2px) translateY(-7px);
+        transition: all .3s ease-in-out;
+        margin-right: 2vw;
+        margin-left: 2vw; *@
     }
 
     .trash {
@@ -95,13 +105,10 @@
         }
         else
         {
-            Console.WriteLine($"{app.ApplicationName} is already open.");
+            OpenedApps.Remove(app);
+            app.IsApplicationOpen = false;
+            Console.WriteLine(@$"{app.ApplicationName} is closed");
         }
-        foreach (var apps in OpenedApps)
-        {
-            Console.WriteLine($"Opened App: {apps.ApplicationName}");
-        }
-
     }
 
     public void CloseApp(macOs.Applications.Application app)
@@ -111,6 +118,7 @@
         {
             OpenedApps.Remove(app);
             app.IsApplicationOpen = false;
+            Console.WriteLine($@"{app.ApplicationName} closeddddddddd !!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         }
     }
 }

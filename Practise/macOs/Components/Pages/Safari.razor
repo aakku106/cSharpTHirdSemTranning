@@ -56,7 +56,7 @@
             Console.WriteLine($"Opened App: {app.ApplicationName}");
         }
 
-        var safariApp = DockComponent.OpenedApps.FirstOrDefault(a => a.ApplicationName.Trim().ToLower() == "safari");
+        var safariApp = DockComponent.OpenedApps.FirstOrDefault(a => a.ApplicationName == "Safari");
         if (safariApp != null)
         {
             Console.WriteLine("Safari found! Closing...");
