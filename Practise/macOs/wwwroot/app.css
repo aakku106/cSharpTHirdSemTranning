@@ -98,7 +98,7 @@ h1:focus {
 
 .finder-window {
   position: absolute;
-  left: 70vw;
+  /* left: 70vw; */
   max-width: 100vw;
   min-height: 25vw;
   min-width: 30vw;
@@ -144,4 +144,11 @@ h1:focus {
 
 .maximize {
   background: #28c840;
+}
+
+/* //weather */
+@media (max-width: 400px) {
+  .weather-container {
+    width: 90%;
+  }
 }

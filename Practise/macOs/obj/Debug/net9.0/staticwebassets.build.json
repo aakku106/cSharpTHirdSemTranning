@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2HlI0haSKcWvvwJZQCJ/z+04vj2uukGhf2iE0aOYI34=",
+  "Hash": "ryAtuZwm7g2/DnlnpMdU3ALTbbzW1vQu5SJWMxhHa6g=",
   "Source": "macOs",
   "BasePath": "_content/macOs",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-825yd4x5c9.gz",
+      "Identity": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-5uqftluwif.gz",
       "SourceId": "macOs",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/macOs",
-      "RelativePath": "app#[.{fingerprint=825yd4x5c9}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=5uqftluwif}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "zizdas7fz1",
-      "Integrity": "G18aA/y0s0IO61S0tfWPrr6oHbaiLH9ZPrrhK19oyyM=",
+      "Fingerprint": "lsu63avay1",
+      "Integrity": "m2N8n3z1K6iThMqhIKWdxKb4CPhMRvxmvfBZT7DSX6Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "825yd4x5c9",
-      "Integrity": "IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w=",
+      "Fingerprint": "5uqftluwif",
+      "Integrity": "YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/app.css"
@@ -187,13 +187,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "app.825yd4x5c9.css",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-825yd4x5c9.gz",
+      "Route": "app.5uqftluwif.css",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-5uqftluwif.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000503778338"
+          "Quality": "0.000492125984"
         }
       ],
       "ResponseHeaders": [
@@ -203,15 +203,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1984"
+          "Value": "2031"
         },
         {
           "Name": "ETag",
-          "Value": "\"G18aA/y0s0IO61S0tfWPrr6oHbaiLH9ZPrrhK19oyyM=\""
+          "Value": "\"m2N8n3z1K6iThMqhIKWdxKb4CPhMRvxmvfBZT7DSX6Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 17:18:47 GMT"
+          "Value": "Fri, 21 Feb 2025 13:33:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -231,13 +231,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w=\""
+          "Value": "W/\"YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "825yd4x5c9"
+          "Value": "5uqftluwif"
         },
         {
           "Name": "label",
@@ -245,12 +245,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w="
+          "Value": "sha256-YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ="
         }
       ]
     },
     {
-      "Route": "app.825yd4x5c9.css",
+      "Route": "app.5uqftluwif.css",
       "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -260,7 +260,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3963"
+          "Value": "4066"
         },
         {
           "Name": "Content-Type",
@@ -268,11 +268,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w=\""
+          "Value": "\"YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 17:18:47 GMT"
+          "Value": "Fri, 21 Feb 2025 13:33:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -282,7 +282,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "825yd4x5c9"
+          "Value": "5uqftluwif"
         },
         {
           "Name": "label",
@@ -290,13 +290,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w="
+          "Value": "sha256-YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ="
         }
       ]
     },
     {
-      "Route": "app.825yd4x5c9.css.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-825yd4x5c9.gz",
+      "Route": "app.5uqftluwif.css.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-5uqftluwif.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -305,7 +305,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1984"
+          "Value": "2031"
         },
         {
           "Name": "Content-Type",
@@ -313,11 +313,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G18aA/y0s0IO61S0tfWPrr6oHbaiLH9ZPrrhK19oyyM=\""
+          "Value": "\"m2N8n3z1K6iThMqhIKWdxKb4CPhMRvxmvfBZT7DSX6Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 17:18:47 GMT"
+          "Value": "Fri, 21 Feb 2025 13:33:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -335,7 +335,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "825yd4x5c9"
+          "Value": "5uqftluwif"
         },
         {
           "Name": "label",
@@ -343,18 +343,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-G18aA/y0s0IO61S0tfWPrr6oHbaiLH9ZPrrhK19oyyM="
+          "Value": "sha256-m2N8n3z1K6iThMqhIKWdxKb4CPhMRvxmvfBZT7DSX6Q="
         }
       ]
     },
     {
       "Route": "app.css",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-825yd4x5c9.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-5uqftluwif.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000503778338"
+          "Quality": "0.000492125984"
         }
       ],
       "ResponseHeaders": [
@@ -364,15 +364,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1984"
+          "Value": "2031"
         },
         {
           "Name": "ETag",
-          "Value": "\"G18aA/y0s0IO61S0tfWPrr6oHbaiLH9ZPrrhK19oyyM=\""
+          "Value": "\"m2N8n3z1K6iThMqhIKWdxKb4CPhMRvxmvfBZT7DSX6Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 17:18:47 GMT"
+          "Value": "Fri, 21 Feb 2025 13:33:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -392,13 +392,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w=\""
+          "Value": "W/\"YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w="
+          "Value": "sha256-YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ="
         }
       ]
     },
@@ -413,7 +413,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3963"
+          "Value": "4066"
         },
         {
           "Name": "Content-Type",
@@ -421,11 +421,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w=\""
+          "Value": "\"YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 17:18:47 GMT"
+          "Value": "Fri, 21 Feb 2025 13:33:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -435,13 +435,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IFtoXvplRX4jnoXiWFxEU87Y/8x+cSumLhjd6+JAJ/w="
+          "Value": "sha256-YznkffqalnetncGi7t7dZCpqchvo6Sh/Mpm/oAQz2tQ="
         }
       ]
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-825yd4x5c9.gz",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-5uqftluwif.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -450,7 +450,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1984"
+          "Value": "2031"
         },
         {
           "Name": "Content-Type",
@@ -458,11 +458,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G18aA/y0s0IO61S0tfWPrr6oHbaiLH9ZPrrhK19oyyM=\""
+          "Value": "\"m2N8n3z1K6iThMqhIKWdxKb4CPhMRvxmvfBZT7DSX6Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 17:18:47 GMT"
+          "Value": "Fri, 21 Feb 2025 13:33:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -480,7 +480,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-G18aA/y0s0IO61S0tfWPrr6oHbaiLH9ZPrrhK19oyyM="
+          "Value": "sha256-m2N8n3z1K6iThMqhIKWdxKb4CPhMRvxmvfBZT7DSX6Q="
         }
       ]
     },
