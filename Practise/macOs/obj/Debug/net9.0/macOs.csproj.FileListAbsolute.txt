@@ -16,6 +16,7 @@
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/scopedcss/bundle/macOs.styles.css
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/scopedcss/projectbundle/macOs.bundle.scp.css
+/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-5uqftluwif.gz
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/bbxs0bafe2-w0mqwq0cnb.gz
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/klnjcfkkxr-w0mqwq0cnb.gz
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/staticwebassets.build.json
@@ -32,4 +33,3 @@
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/macOs.pdb
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/macOs.genruntimeconfig.cache
 /Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/ref/macOs.dll
-/Users/aakku/Documents/Tranning/Practise/macOs/obj/Debug/net9.0/compressed/b2gssghsbq-5uqftluwif.gz

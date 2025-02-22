@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/app.css"
     },
     {
+      "Id": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/KuramaCart.png",
+      "PackagePath": "staticwebassets/image/KuramaCart.png"
+    },
+    {
       "Id": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/apple.jpg",
       "PackagePath": "staticwebassets/image/apple.jpg"
     },

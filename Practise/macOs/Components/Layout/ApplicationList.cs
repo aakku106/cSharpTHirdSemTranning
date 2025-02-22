@@ -23,6 +23,12 @@ public class App
             IsApplicationOpen=false,
             AppIcon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/1200px-Safari_browser_logo.svg.png",
             ComponentType = typeof(Safari)
+        },
+        new(){
+            ApplicationName="KuramaCart",
+            IsApplicationOpen=false,
+            AppIcon="/image/KuramaCart.png",
+            ComponentType = typeof(KuramaCart)
         }
     ];
 }

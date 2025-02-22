@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ryAtuZwm7g2/DnlnpMdU3ALTbbzW1vQu5SJWMxhHa6g=",
+  "Hash": "NZyS7VQuTfqEPE4TVUVvsc0UpQ3tulKWhak/lx7fkjg=",
   "Source": "macOs",
   "BasePath": "_content/macOs",
   "Mode": "Default",
@@ -162,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/image/apple.jpg"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/KuramaCart.png",
+      "SourceId": "macOs",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/",
+      "BasePath": "_content/macOs",
+      "RelativePath": "image/KuramaCart#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vmf74b828y",
+      "Integrity": "GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/KuramaCart.png"
     },
     {
       "Identity": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/trash.png",
@@ -567,6 +588,88 @@
       ]
     },
     {
+      "Route": "image/KuramaCart.png",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/KuramaCart.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 18:45:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc="
+        }
+      ]
+    },
+    {
+      "Route": "image/KuramaCart.vmf74b828y.png",
+      "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/KuramaCart.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 18:45:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vmf74b828y"
+        },
+        {
+          "Name": "label",
+          "Value": "image/KuramaCart.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc="
+        }
+      ]
+    },
+    {
       "Route": "image/trash.ddomw20yy4.png",
       "AssetFile": "/Users/aakku/Documents/Tranning/Practise/macOs/wwwroot/image/trash.png",
       "Selectors": [],
@@ -673,7 +776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -726,7 +829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -763,7 +866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -810,7 +913,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -863,7 +966,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -900,7 +1003,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -947,7 +1050,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1008,7 +1111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1053,7 +1156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1108,7 +1211,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1169,7 +1272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1214,7 +1317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:10:12 GMT"
+          "Value": "Sat, 22 Feb 2025 20:23:29 GMT"
         },
         {
           "Name": "Cache-Control",

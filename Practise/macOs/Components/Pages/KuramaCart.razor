@@ -1,0 +1,74 @@
+@rendermode InteractiveServer
+
+
+<div class="finder-window" style="@($"top: {posY}px; left: {posX}px;")" @onmousemove="HandleMouseMove"
+    @onmouseup="EndDrag">
+    <div class="finder-header" @onmousedown="StartDrag">
+        <div class="buttons" @onmousedown="StartDrag">
+            <span class="close" @onclick="CloseKuramaCart"></span>
+            <span class="maximize" @onclick="ToggleMaximize"></span>
+        </div>
+        <span class="title">KuramaCart🦊</span>
+    </div>
+    @* <iframe src="https://localhost:7069"
+        style="min-width: 80vw; min-height: 80vw; max-height: 100vw; max-width: 100vw; border: none;"></iframe> *@
+
+    <iframe src="https://localhost:7069/" width="100%" height="600px" style="border: none;"></iframe>
+</div>
+
+
+@code {
+    private double posX = 200, posY = 100;
+    private double startX, startY;
+    private bool isDragging = false;
+    public bool closeKuramaCart = false;
+    public List<macOs.Applications.Application> getValue { get; set; } = new();
+
+    private void StartDrag(MouseEventArgs e)
+    {
+        isDragging = true;
+        startX = e.ClientX - posX;
+        startY = e.ClientY - posY;
+    }
+
+    private void HandleMouseMove(MouseEventArgs e)
+    {
+        if (isDragging)
+        {
+            posX = e.ClientX - startX;
+            posY = e.ClientY - startY;
+        }
+    }
+
+    private void EndDrag()
+    {
+        isDragging = false;
+    }
+
+    public void CloseKuramaCart()
+    {
+        Console.WriteLine("Attempting to close KuramaCart...");
+        Console.WriteLine($"Total Opened Apps: {DockComponent.OpenedApps.Count}");
+
+        foreach (var app in DockComponent.OpenedApps)
+        {
+            Console.WriteLine($"Opened App: {app.ApplicationName}");
+        }
+
+        var KuramaCartApp = DockComponent.OpenedApps.FirstOrDefault(a => a.ApplicationName == "KuramaCart");
+        if (KuramaCartApp != null)
+        {
+            Console.WriteLine("KuramaCart found! Closing...");
+            DockComponent.CloseApp(KuramaCartApp);
+        }
+        else
+        {
+            Console.WriteLine("KuramaCart not found in OpenedApps!");
+        }
+    }
+
+    private void ToggleMaximize()
+    {
+        Console.WriteLine("KuramaCart Maximized/Restored");
+    }
+}
