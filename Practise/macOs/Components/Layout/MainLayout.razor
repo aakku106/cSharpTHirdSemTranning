@@ -1,10 +1,58 @@
 ﻿@inherits LayoutComponentBase
 
+
+<head>
+    @* <style>
+        #menubar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 37px !important;
+            padding: 1vw;
+            background-color: rgba(97, 93, 93, 0.276);
+            color: white;
+            backdrop-filter: blur(20px) !important;
+            width: 100%;
+            z-index: 11111;
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-around !important;
+
+
+
+            transition-property: all;
+            transition-duration: 0.7s !important;
+            transition-delay: 0.2s !important;
+
+            &:hover {
+                transition-delay: 2s !important;
+                transition-duration: 5s;
+                height: 300px !important;
+                z-index: 999999;
+            }
+        }
+
+        #notch {
+            top: -50% !important;
+            position: absolute;
+            border: 5px solid black;
+            border-radius: 10px !important;
+            background-color: black;
+            width: 15vw;
+            left: 50vw;
+            transform: translate(-50%, 50%);
+            height: 37px;
+            z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+        }
+    </style> *@
+</head>
+
 <div class="main-layout">
     <div id="menubar">
+        <div id="notch"></div>
         <Menubar />
     </div>
-    <div class="desktop">
+    <div id="desktop">
         @Body
     </div>
     <div id="dock">

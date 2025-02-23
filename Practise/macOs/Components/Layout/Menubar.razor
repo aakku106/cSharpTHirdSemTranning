@@ -20,12 +20,23 @@
             display: flex !important;
             flex-direction: row !important;
             justify-content: space-between !important;
+            @* transition-property: all;
+            transition-duration: 0.7s !important;
+                transition-delay: 0.2s !important;
+
+        &:hover {
+            transition-delay: 2s !important;            
+            transition-duration: 5s;
+            height: 300px !important;
+            z-index: 999999;
+            } *@
 
             .leftItems {
                 .about {
                     font-size: 1.3rem;
                     transition: all 0.2s ease-in-out;
-
+                    z-index: 999999999999999999;
+                    
                     &:hover {
                         transform: scale(20px) !important;
                     }
@@ -134,6 +145,6 @@
         Environment.Exit(0);
     }
     private void body(){
-        isLogoClicked=false;
+        @* isLogoClicked=false; *@
     }
 }
